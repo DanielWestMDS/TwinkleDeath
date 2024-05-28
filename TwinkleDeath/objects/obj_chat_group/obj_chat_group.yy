@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_phone",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_chat_group",
+  "eventList":[],
   "managed":true,
-  "name":"obj_phone",
+  "name":"obj_chat_group",
   "overriddenProperties":[],
   "parent":{
-    "name":"Phone",
-    "path":"folders/Objects/Phone.yy",
+    "name":"Chats",
+    "path":"folders/Objects/Phone/Chats.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_chat_parent",
+    "path":"objects/obj_chat_parent/obj_chat_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_phone",
-    "path":"sprites/spr_phone/spr_phone.yy",
+    "name":"spr_chat_group",
+    "path":"sprites/spr_chat_group/spr_chat_group.yy",
   },
   "spriteMaskId":null,
   "visible":true,
