@@ -3,3 +3,6 @@
 
 // set depth high so it appears behind everything
 depth = 10;
+
+// global variable for if chat is open
+global.b_chat_opened = false;

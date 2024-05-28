@@ -5,11 +5,12 @@
 if (position_meeting(mouse_x, mouse_y, id))
 {
     //mouse is hovering
-	shader_set(sh_hover);
+	image_alpha = 0.6;
 }
 else
 {
-	shader_reset();
+	image_alpha = 1.0;
 }
 
+// appear on da screen
 draw_self();
