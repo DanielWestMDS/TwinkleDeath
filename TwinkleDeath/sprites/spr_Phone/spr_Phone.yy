@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_phone",
   "bboxMode":0,
-  "bbox_bottom":1599,
+  "bbox_bottom":1728,
   "bbox_left":0,
   "bbox_right":799,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8a32ec85-54e7-41d8-90ce-801593213be0","name":"8a32ec85-54e7-41d8-90ce-801593213be0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b9ca7a25-6c01-4bab-a958-95de8f591b9a","name":"b9ca7a25-6c01-4bab-a958-95de8f591b9a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":1600,
+  "height":1729,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c15408ff-3ef4-420c-b4d3-1c34ce07e61e","blendMode":0,"displayName":"default","isLocked":false,"name":"c15408ff-3ef4-420c-b4d3-1c34ce07e61e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9c0c23df-2975-48dc-8d45-96ee260bf66b","blendMode":0,"displayName":"default","isLocked":false,"name":"9c0c23df-2975-48dc-8d45-96ee260bf66b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_phone",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8a32ec85-54e7-41d8-90ce-801593213be0","path":"sprites/spr_phone/spr_phone.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"58f869fa-b6dd-4a73-ade9-f93ac17e8322","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9ca7a25-6c01-4bab-a958-95de8f591b9a","path":"sprites/spr_phone/spr_phone.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8da5b9b6-8060-4577-9a3c-9a730ae52171","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
