@@ -6,6 +6,10 @@ depth = 10;
 
 // global variable for if chat is open
 global.b_chat_opened = false;
+// global variable for if the player needs to select dialogue
+global.b_selecting_message = false;
+// for selected dialogue 
+global.i_selected_message = 0;
 
 enum CURRENT_CHAT
 {

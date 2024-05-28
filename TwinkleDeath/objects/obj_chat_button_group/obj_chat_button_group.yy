@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_group",
-    "path":"sprites/spr_chat_group/spr_chat_group.yy",
+    "name":"spr_chat_button_group",
+    "path":"sprites/spr_chat_button_group/spr_chat_button_group.yy",
   },
   "spriteMaskId":null,
   "visible":true,
