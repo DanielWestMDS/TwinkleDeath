@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_laurie",
+  "%Name":"obj_chat_button_parent",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_laurie",
+  "name":"obj_chat_button_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Chats",
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_chat_laurie",
-    "path":"sprites/spr_chat_laurie/spr_chat_laurie.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_parent",
+  "%Name":"obj_back",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_parent",
+  "name":"obj_back",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chats",
-    "path":"folders/Objects/Phone/Chats.yy",
+    "name":"Phone",
+    "path":"folders/Objects/Phone.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_back",
+    "path":"sprites/spr_back/spr_back.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -2,6 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_chat_group",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_group",
-    "path":"sprites/spr_chat_group/spr_chat_group.yy",
+    "name":"spr_chat_laurie",
+    "path":"sprites/spr_chat_laurie/spr_chat_laurie.yy",
   },
   "spriteMaskId":null,
   "visible":true,

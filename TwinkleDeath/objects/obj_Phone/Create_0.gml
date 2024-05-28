@@ -6,3 +6,10 @@ depth = 10;
 
 // global variable for if chat is open
 global.b_chat_opened = false;
+
+enum CURRENT_CHAT
+{
+	NONE,
+	GROUP,
+	LAURIE,
+}
