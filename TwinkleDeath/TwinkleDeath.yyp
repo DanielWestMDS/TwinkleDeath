@@ -37,6 +37,7 @@
   "name":"TwinkleDeath",
   "resources":[
     {"id":{"name":"obj_chat_group","path":"objects/obj_chat_group/obj_chat_group.yy",},},
+    {"id":{"name":"obj_chat_laurie","path":"objects/obj_chat_laurie/obj_chat_laurie.yy",},},
     {"id":{"name":"obj_chat_parent","path":"objects/obj_chat_parent/obj_chat_parent.yy",},},
     {"id":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
