@@ -22,13 +22,16 @@ function create_feed()
 {
 	feedopen = true
 	num = instance_number(obj_feed_parent)
-	for (var i = num; i >= 0; i-=1)
+	for (var i = 4; i >= 0; i-=1)
 	{
 		_inst = instance_find(obj_feed_parent, i);
 		instance_destroy(_inst)
+		create_post((i-1) - curblock)
 	}
+	/*
 	create_post(-1 - curblock)
 	create_post(0 - curblock)
 	create_post(1 - curblock)
 	create_post(2 - curblock)	
+	*/
 }

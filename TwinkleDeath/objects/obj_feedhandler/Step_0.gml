@@ -25,7 +25,6 @@ else { feedopen = false }
 
    
 curblock = floor(yPos / blength);
-var paraindex0 = floor((yPos) / blength);
 
 // checks if the player has moved far enough to add an extra slot to 
 // overcompensate. (similar to leap years)
@@ -41,7 +40,7 @@ else {
 */
 
 // only updates the background when scrolled between blocks
-if (curblock != prevblock) || (!feedopen && !global.b_chat_opened)
+if ((curblock != prevblock) || (!feedopen && !global.b_chat_opened))
 {
 	create_feed()
 }
