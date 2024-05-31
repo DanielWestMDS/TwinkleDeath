@@ -17,3 +17,19 @@ enum CURRENT_CHAT
 	GROUP,
 	LAURIE,
 }
+
+instance_create_layer(500, 500, "Chat", obj_chat_button_group);
+
+// order of display for chats
+global.chats = [obj_chat_button_group, 
+				obj_chat_button_group, 
+				obj_chat_button_group, 
+				obj_chat_button_group, 
+				obj_chat_button_group];
+
+for	(i = 0; i < global.chats.size; i++)
+{
+	global.chats[i].sprite_index = i;
+	global.chats[i].x = i * 100;
+	global.chats[i].y = 500;
+}
