@@ -54,6 +54,7 @@
     {"id":{"name":"obj_Quagsire","path":"objects/obj_Quagsire/obj_Quagsire.yy",},},
     {"id":{"name":"obj_Room","path":"objects/obj_Room/obj_Room.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_game_code","path":"scripts/scr_game_code/scr_game_code.yy",},},
     {"id":{"name":"sh_hover","path":"shaders/sh_hover/sh_hover.yy",},},
     {"id":{"name":"RoomSprite","path":"sprites/RoomSprite/RoomSprite.yy",},},
     {"id":{"name":"spr_back","path":"sprites/spr_back/spr_back.yy",},},
