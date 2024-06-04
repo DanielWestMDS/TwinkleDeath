@@ -12,37 +12,29 @@
 // destroy all posts if a chat is opened
 if !(global.b_chat_opened)
 {
-	if (mouse_wheel_up())
+	if (mouse_wheel_up() && curblock <= 0)
 	{
-		yPos += 32;
+		yPos += 64;
 	}
-	if (mouse_wheel_down())
+	if (mouse_wheel_down() && curblock >= -maxfeedlength+2)
 	{
-		yPos -= 32;
+		yPos -= 64;
 	}
 }
 else { feedopen = false }
 
-   
+
 curblock = floor(yPos / blength);
 
-// checks if the player has moved far enough to add an extra slot to 
-// overcompensate. (similar to leap years)
 /*
-if yPos >= 0 {
-	curblock = floor(yPos / blength)
-	paraindex0 = floor((yPos*(0.05)) / blength)
-}
-else {
-	curblock = ceil(yPos / blength)
-	paraindex0 = ceil((yPos*(0.05)) / blength)
-}
-*/
-
 // only updates the background when scrolled between blocks
 if ((curblock != prevblock) || (!feedopen && !global.b_chat_opened))
 {
 	create_feed()
 }
-
+*/
+if (!feedopen && !global.b_chat_opened)
+{
+	create_permfeed()
+}
 prevblock = curblock
