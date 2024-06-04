@@ -12,6 +12,9 @@
     {"name":"inst_1C01BE8D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7D701267","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_36B67DF5","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_76018ED5","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_458136CC","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_49394056","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,6 +26,12 @@
       ],"layers":[],"name":"Chat","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_1C9C4DEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C9C4DEA","objectId":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":0.0,},
+        {"$GMRInstance":"","%Name":"inst_76018ED5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76018ED5","objectId":{"name":"obj_feedhandler","path":"objects/obj_feedhandler/obj_feedhandler.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_feedhandler","path":"objects/obj_feedhandler/obj_feedhandler.yy",},"propertyId":{"name":"maxfeedlength","path":"objects/obj_feedhandler/obj_feedhandler.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_feedhandler","path":"objects/obj_feedhandler/obj_feedhandler.yy",},"propertyId":{"name":"postSet","path":"objects/obj_feedhandler/obj_feedhandler.yy",},"resource":{"name":"spr_post_plcalt","path":"sprites/spr_post_plcalt/spr_post_plcalt.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_post_plcalt",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
+        {"$GMRInstance":"","%Name":"inst_458136CC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_458136CC","objectId":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.22267205,"x":960.0,"y":0.0,},
+        {"$GMRInstance":"","%Name":"inst_49394056","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49394056","objectId":{"name":"obj_feedSource","path":"objects/obj_feedSource/obj_feedSource.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"RoomLayout","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_7D701267","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D701267","objectId":{"name":"obj_Room","path":"objects/obj_Room/obj_Room.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.4166666,"scaleY":1.4148147,"x":0.0,"y":0.0,},
