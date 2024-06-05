@@ -4,6 +4,8 @@
 // set depth high so it appears behind everything
 depth = 10;
 
+image_speed = 0;
+
 // global variable for if chat is open
 global.b_chat_opened = false;
 // global variable for if the player needs to select dialogue
@@ -27,9 +29,3 @@ global.chats = [obj_chat_button_group,
 				obj_chat_button_group, 
 				obj_chat_button_group];
 
-for	(i = 0; i < global.chats.size; i++)
-{
-	global.chats[i].sprite_index = i;
-	global.chats[i].x = i * 100;
-	global.chats[i].y = 500;
-}
