@@ -28,7 +28,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"yPos","filters":[],"listItems":[],"multiselect":false,"name":"yPos","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"curb","filters":[],"listItems":[],"multiselect":false,"name":"curb","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"maxfeedlength","filters":[],"listItems":[],"multiselect":false,"name":"maxfeedlength","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"postSet","filters":[],"listItems":[],"multiselect":false,"name":"postSet","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_post_plc","path":"sprites/spr_post_plc/spr_post_plc.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_post_plc","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
