@@ -15,7 +15,10 @@ if mouse_check_button_pressed(mb_left)
 		
 			// add chats
 			instance_create_layer(1344, 128, "Chat", obj_chat_button_group);
-		
+			
+			// change phone sprite
+			global.tab_open = 0;
+			
 			// remove button
 			instance_destroy(self);
 		}

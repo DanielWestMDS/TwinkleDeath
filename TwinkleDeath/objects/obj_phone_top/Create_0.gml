@@ -7,3 +7,12 @@ depth = -100;
 // do not animate
 
 image_speed = 0;
+
+enum TABS 
+{
+	FEED,
+	MESSAGES,
+	PROFILE,
+}
+
+global.tab_open = TABS.FEED;

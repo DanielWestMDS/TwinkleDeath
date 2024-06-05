@@ -9,6 +9,8 @@ if mouse_check_button_pressed(mb_left)
 	{ 
 		// set chat variable to open
 		global.b_chat_opened = true;
+		// set message tab selected
+		global.tab_open = 1;
 		// change to chat sprite
 		instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_group);
 		instance_destroy(self);
