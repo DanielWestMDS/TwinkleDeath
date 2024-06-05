@@ -3,3 +3,6 @@
 
 // appear in front of phone
 depth = -10;
+
+// do not automatically animate
+image_speed = 0;
