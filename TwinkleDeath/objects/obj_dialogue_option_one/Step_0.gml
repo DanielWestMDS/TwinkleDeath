@@ -8,7 +8,7 @@ if mouse_check_button_pressed(mb_left)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
 		// test
-		url_open("https://www.victimsupport.org.nz/crimes-and-traumatic-events/stalking-harassment");
+		//url_open("https://www.victimsupport.org.nz/crimes-and-traumatic-events/stalking-harassment");
 		// reset globals once dialogue selected
 		global.b_selecting_message = false;
 		// may need to make other dialogue options for multiple selections

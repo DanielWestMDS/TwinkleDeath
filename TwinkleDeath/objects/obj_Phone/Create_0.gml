@@ -4,6 +4,8 @@
 // set depth high so it appears behind everything
 depth = 10;
 
+image_speed = 0;
+
 // global variable for if chat is open
 global.b_chat_opened = false;
 // global variable for if the player needs to select dialogue
@@ -17,3 +19,13 @@ enum CURRENT_CHAT
 	GROUP,
 	LAURIE,
 }
+
+instance_create_layer(500, 500, "Chat", obj_chat_button_group);
+
+// order of display for chats
+global.chats = [obj_chat_button_group, 
+				obj_chat_button_group, 
+				obj_chat_button_group, 
+				obj_chat_button_group, 
+				obj_chat_button_group];
+
