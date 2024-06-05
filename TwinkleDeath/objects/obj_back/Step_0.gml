@@ -7,14 +7,18 @@ if mouse_check_button_pressed(mb_left)
 	//Arguments are (x, y, obj, prec, notme)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
-		// destroy chat
-		global.b_chat_opened = false;
+		// do not do anything while selecting dialogue
+		if (!global.b_selecting_message)
+		{
+			// destroy chat
+			global.b_chat_opened = false;
 		
-		// add chats
-		instance_create_layer(1344, 128, "Chat", obj_chat_button_group);
+			// add chats
+			instance_create_layer(1344, 128, "Chat", obj_chat_button_group);
 		
-		// remove button
-		instance_destroy(self);
+			// remove button
+			instance_destroy(self);
+		}
     }
 }
 
