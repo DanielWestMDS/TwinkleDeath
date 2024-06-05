@@ -7,10 +7,15 @@ if mouse_check_button_pressed(mb_left)
 	//Arguments are (x, y, obj, prec, notme)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
-		if (!global.b_selecting_message)
+		// do not iterate messages if sending dialogue or chat is finished
+		if (!global.b_selecting_message && !b_chat_finished)
 		{
 		    //iterate messages
 			image_index++;
+			if (image_index >= f_chat_length - 1)
+			{
+				b_chat_finished = true;	
+			}
 		}
     }
 }
