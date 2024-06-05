@@ -20,7 +20,7 @@ enum CURRENT_CHAT
 	LAURIE,
 }
 
-instance_create_layer(500, 500, "Chat", obj_chat_button_group);
+instance_create_layer(1344, 128, "Chat", obj_chat_button_group);
 
 // order of display for chats
 global.chats = [obj_chat_button_group, 
