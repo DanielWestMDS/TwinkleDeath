@@ -13,7 +13,7 @@ if mouse_check_button_pressed(mb_left)
 		global.tab_open = 1;
 		// create each chat button
 		instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
-		instance_destroy(self);
+		//instance_destroy(self);
     }
 }
 

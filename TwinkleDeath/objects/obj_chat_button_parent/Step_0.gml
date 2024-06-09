@@ -15,6 +15,6 @@ if mouse_check_button_pressed(mb_left)
 if (global.b_chat_opened)
 {
 	// display back button to exit chat
-	instance_create_layer(1060, 80, "Instances", obj_back);
+	//instance_create_layer(1060, 80, "Instances", obj_back);
 	//instance_destroy(self);
 }
