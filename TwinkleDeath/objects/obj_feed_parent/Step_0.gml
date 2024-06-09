@@ -11,3 +11,9 @@ if (global.b_chat_opened)
 {
 	remove_post()
 }
+
+// destroy all posts if not on feed
+if (global.tab_open != 0)
+{
+	remove_post();
+}

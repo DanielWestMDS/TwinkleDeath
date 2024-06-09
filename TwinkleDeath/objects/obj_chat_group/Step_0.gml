@@ -15,33 +15,36 @@ if mouse_check_button_pressed(mb_left)
 			if (image_index >= f_chat_length - 1)
 			{
 				b_chat_finished = true;	
+				global.b_group_read = true;
 			}
 		}
     }
 }
 
-// dialogue option at certain message
-if (image_index == 3)
+if (global.b_group_read == false)
 {
-	// stop repopulating select dialogue once pressed
-	if (global.i_selected_message == 0)
+	// dialogue option at certain message
+	if (image_index == 3)
 	{
-		// only make one dialogue
-		if (!b_dialogue_generated)
+		// stop repopulating select dialogue once pressed
+		if (global.i_selected_message == 0)
 		{
-			b_dialogue_generated = true;
-			global.b_selecting_message = true;
-			instance_create_layer(1650, 1300, "instances", obj_dialogue_option_one);
+			// only make one dialogue
+			if (!b_dialogue_generated)
+			{
+				b_dialogue_generated = true;
+				global.b_selecting_message = true;
+				instance_create_layer(1650, 1300, "instances", obj_dialogue_option_one);
+			}
+		}
+		else if (global.i_selected_message == 1)
+		{
+			// change this to other image for multi dialogue options
+			image_index++;
+			// reset for no selected message
+			global.i_selected_message = 0;
 		}
 	}
-	else if (global.i_selected_message == 1)
-	{
-		// change this to other image for multi dialogue options
-		image_index++;
-		// reset for no selected message
-		global.i_selected_message = 0;
-	}
 }
-
 // Inherit the parent event
 event_inherited();

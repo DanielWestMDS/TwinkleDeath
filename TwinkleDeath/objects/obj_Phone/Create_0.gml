@@ -20,12 +20,25 @@ enum CURRENT_CHAT
 	LAURIE,
 }
 
-instance_create_layer(1344, 128, "Chat", obj_chat_button_group);
+instance_create_layer(1344, 128, "Chat", obj_chat_button_select);
 
 // order of display for chats
-global.chats = [obj_chat_button_group, 
-				obj_chat_button_group, 
-				obj_chat_button_group, 
-				obj_chat_button_group, 
-				obj_chat_button_group];
+global.chats = [obj_chat_button_select, 
+				obj_chat_button_select, 
+				obj_chat_button_select, 
+				obj_chat_button_select, 
+				obj_chat_button_select];
+				
+				
+// global bools for each chat
+global.b_group_read = false;
+global.b_laurie_read = false;
+global.b_crispin_read = false;
+global.b_burner_read = false;
+global.b_leo_read = false;
+global.b_justin_read = false;
+global.b_burner2_read = false;
+global.b_adam_read = false;
 
+// what day we are on
+global.i_day = 0;

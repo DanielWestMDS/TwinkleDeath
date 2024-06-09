@@ -16,5 +16,5 @@ if (global.b_chat_opened)
 {
 	// display back button to exit chat
 	instance_create_layer(1060, 80, "Instances", obj_back);
-	instance_destroy(self);
+	//instance_destroy(self);
 }

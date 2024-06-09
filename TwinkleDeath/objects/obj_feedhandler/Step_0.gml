@@ -10,7 +10,7 @@
 	There is a lot of things to make sure things stay on screen properly.
 */
 // destroy all posts if a chat is opened
-if !(global.b_chat_opened)
+if (global.tab_open == 0)
 {
 	if (mouse_wheel_up() && curblock <= 0)
 	{
@@ -33,7 +33,7 @@ if ((curblock != prevblock) || (!feedopen && !global.b_chat_opened))
 	create_feed()
 }
 */
-if (!feedopen && !global.b_chat_opened)
+if (!feedopen && global.tab_open == 0)
 {
 	create_permfeed()
 }
