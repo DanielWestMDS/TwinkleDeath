@@ -43,9 +43,6 @@ global.b_adam_read = false;
 // what day we are on
 global.i_day = 0;
 
-// is phone away
-global.b_phone_away = false;
-
 // how many chats to read 
 global.i_chats_to_read = 1;
 

@@ -49,7 +49,7 @@ if (global.b_group_read == false)
 }
 
 // teleport away if phone put away
-if (global.b_phone_away)
+if (!global.b_phoneactive)
 {
 	x = 10000;
 	y = 10000;

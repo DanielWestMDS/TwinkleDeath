@@ -18,7 +18,7 @@ if mouse_check_button_pressed(mb_left)
 }
 
 // teleport away if phone put away
-if (global.b_phone_away)
+if (!global.b_phoneactive)
 {
 	x = 10000;
 	y = 10000;

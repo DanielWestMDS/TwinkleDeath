@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Room",
+  "%Name":"obj_FadeEffect",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Room",
+  "name":"obj_FadeEffect",
   "overriddenProperties":[],
   "parent":{
     "name":"Room",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Room",
-    "path":"sprites/spr_Room/spr_Room.yy",
+    "name":"RoomSprite",
+    "path":"sprites/RoomSprite/RoomSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
