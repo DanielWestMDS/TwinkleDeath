@@ -16,6 +16,17 @@ if (global.i_chats_read == global.i_chats_to_read)
 				// put code for next day here
 				global.i_day++;
 				global.i_chats_read = 0;
+				global.b_chat_opened = false;
+				
+				// global bools for each chat
+				global.b_group_read = false;
+				global.b_laurie_read = false;
+				global.b_crispin_read = false;
+				global.b_burner_read = false;
+				global.b_leo_read = false;
+				global.b_justin_read = false;
+				global.b_burner2_read = false;
+				global.b_adam_read = false;
 			}
 	    }
 	}
