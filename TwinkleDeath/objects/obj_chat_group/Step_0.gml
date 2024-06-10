@@ -16,6 +16,7 @@ if mouse_check_button_pressed(mb_left)
 			{
 				b_chat_finished = true;	
 				global.b_group_read = true;
+				global.i_chats_read++;
 			}
 		}
     }

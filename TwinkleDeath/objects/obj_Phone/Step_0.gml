@@ -23,3 +23,18 @@ else
 	y = 0;
 }
 
+// set chats for days
+switch(global.i_day)
+{
+	case(0):
+		global.i_chats_to_read = 1;
+	break;
+	
+	case(1):
+		global.i_chats_to_read = 1;
+	break;
+	
+	case(2):
+		global.i_chats_to_read = 2;
+	break;
+}

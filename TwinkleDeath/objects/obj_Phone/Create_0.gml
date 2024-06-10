@@ -45,3 +45,9 @@ global.i_day = 0;
 
 // is phone away
 global.b_phone_away = false;
+
+// how many chats to read 
+global.i_chats_to_read = 1;
+
+// how many chats read
+global.i_chats_read = 0;
