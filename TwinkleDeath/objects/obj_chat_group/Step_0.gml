@@ -8,7 +8,7 @@ if mouse_check_button_pressed(mb_left)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
 		// do not iterate messages if sending dialogue or chat is finished
-		if (!global.b_selecting_message && !b_chat_finished)
+		if (!global.b_selecting_message && !global.b_group_read)
 		{
 		    //iterate messages
 			image_index++;
@@ -34,7 +34,7 @@ if (global.b_group_read == false)
 			{
 				b_dialogue_generated = true;
 				global.b_selecting_message = true;
-				instance_create_layer(1650, 1300, "instances", obj_dialogue_option_one);
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_option_one);
 			}
 		}
 		else if (global.i_selected_message == 1)
@@ -46,5 +46,18 @@ if (global.b_group_read == false)
 		}
 	}
 }
+
+// teleport away if phone put away
+if (global.b_phone_away)
+{
+	x = 10000;
+	y = 10000;
+}
+else
+{
+	x = room_width / 2;
+	y = room_height / 2;
+}
+
 // Inherit the parent event
 event_inherited();

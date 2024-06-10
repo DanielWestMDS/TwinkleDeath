@@ -3,6 +3,10 @@
 
 order = 0;
 
+if (global.b_group_read)
+{
+	image_index = 1;
+}
 // Inherit the parent event
 event_inherited();
 

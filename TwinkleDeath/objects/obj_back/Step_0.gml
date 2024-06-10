@@ -35,3 +35,15 @@ else
 {
 	image_index = 0;
 }
+
+// teleport away if phone put away
+if (global.b_phone_away)
+{
+	x = 10000;
+	y = 10000;
+}
+else
+{
+	x = 1060;
+	y = 80;
+}

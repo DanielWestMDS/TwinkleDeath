@@ -16,3 +16,19 @@ switch(global.tab_open)
 		image_index = 2;
 	break;
 }
+
+
+// teleport away if phone put away
+if (global.b_phone_away)
+{
+	x = 10000;
+	y = 10000;
+}
+else
+{
+	x = 1359;
+	y = 859;
+}
+
+
+

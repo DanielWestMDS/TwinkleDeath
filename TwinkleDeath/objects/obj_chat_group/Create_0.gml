@@ -15,5 +15,10 @@ b_chat_finished = false;
 
 // number of messages in this chat
 f_chat_length = sprite_get_info(spr_chat_group).num_subimages;
+
+if (global.b_group_read)
+{
+	image_index = f_chat_length - 1;
+}
 //image_xscale = 0.5;
 //image_yscale = 0.5;

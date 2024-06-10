@@ -17,6 +17,18 @@ if mouse_check_button_pressed(mb_left)
     }
 }
 
+// teleport away if phone put away
+if (global.b_phone_away)
+{
+	x = 10000;
+	y = 10000;
+}
+else
+{
+	x = 1344;
+	y = 128;
+}
+
 // Inherit the parent event
 event_inherited();
 
