@@ -14,7 +14,6 @@ if (global.i_chats_read == global.i_chats_to_read)
 			if (!global.b_selecting_message)
 			{
 				// put code for next day here
-				//global.i_day++;
 				global.b_dayactive = false;
 				global.i_chats_read = 0;
 				global.b_chat_opened = false;

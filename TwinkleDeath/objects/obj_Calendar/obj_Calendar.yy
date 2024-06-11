@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_journal",
+  "%Name":"obj_Calendar",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_journal",
+  "name":"obj_Calendar",
   "overriddenProperties":[],
   "parent":{
     "name":"UI",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_journal",
-    "path":"sprites/spr_journal/spr_journal.yy",
+    "name":"spr_DaysUI",
+    "path":"sprites/spr_DaysUI/spr_DaysUI.yy",
   },
   "spriteMaskId":null,
   "visible":true,

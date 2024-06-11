@@ -40,9 +40,6 @@ global.b_justin_read = false;
 global.b_burner2_read = false;
 global.b_adam_read = false;
 
-// what day we are on
-global.i_day = 0;
-
 // how many chats to read 
 global.i_chats_to_read = 1;
 

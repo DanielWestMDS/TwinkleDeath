@@ -4,7 +4,6 @@ if (global.i_gameday != 60)
 {
 	if (!global.b_dayactive && fadecooldowncurrent == fadecooldownmax)
 	{
-		show_debug_message("New Day Created");
 		fadecooldowncurrent = 40;
 		update_days(global.i_gameday, global.i_worldday);
 		show_debug_message(string(global.i_gameday) + " scene, " + string(global.i_worldday) + " day");
@@ -24,7 +23,8 @@ if (global.i_gameday != 60)
 	else if (!global.b_dayactive)
 	{
 		fadecooldowncurrent = fadecooldowncurrent -0.5;
-		show_debug_message("Day in " + string(fadecooldowncurrent));
+		global.tab_open = 1;
+		
 	}
 	
 	//Day Code
