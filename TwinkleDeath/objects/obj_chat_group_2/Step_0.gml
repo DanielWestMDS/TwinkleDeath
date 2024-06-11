@@ -35,7 +35,7 @@ if (global.b_group_read == false)
 			{
 				b_dialogue_generated = true;
 				global.b_selecting_message = true;
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_option_one);
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
 			}
 		}
 		else if (global.i_selected_message == 1)

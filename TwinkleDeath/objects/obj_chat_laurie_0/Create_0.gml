@@ -11,8 +11,6 @@ image_speed = 0;
 // dialogue bugging out
 b_dialogue_generated = false;
 
-b_waiting = false;
-
 b_chat_finished = false;
 
 // number of messages in this chat
