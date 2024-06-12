@@ -8,6 +8,11 @@ depth = -10;
 // only iterate messages on click
 image_speed = 0;
 
+// start height
+start_height = y;
+
+current_message_offset = 0;
+
 // dialogue bugging out
 b_dialogue_generated = false;
 

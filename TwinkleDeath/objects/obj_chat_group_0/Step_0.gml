@@ -11,13 +11,14 @@ if mouse_check_button_pressed(mb_left)
 		if (!global.b_selecting_message && !global.b_group_read && !b_waiting)
 		{
 		    //iterate messages
-			image_index++;
-			if (image_index >= f_chat_length - 1)
+			y += 300;
+			if (y >= sprite_height - 800)
 			{
 				b_chat_finished = true;	
 				global.b_group_read = true;
 				global.i_chats_read++;
 			}
+			//current_message_offset += 1;
 		}
     }
 }
@@ -25,7 +26,7 @@ if mouse_check_button_pressed(mb_left)
 if (global.b_group_read == false)
 {
 	// dialogue option at certain message
-	if (image_index == 1)
+	if (y == start_height + (1 * 300))
 	{
 		// stop repopulating select dialogue once pressed
 		if (global.i_selected_message == 0)
