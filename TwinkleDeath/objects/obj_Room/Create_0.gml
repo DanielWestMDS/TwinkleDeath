@@ -1,6 +1,7 @@
 /// @description Game creation and starting will be happening here
 fadecooldownmax = 0;
 fadecooldowncurrent = 40;
+b_resetroom = false;
 
 //Global Stats
 global.b_dayactive = false; //Should only be modified by Day Manager. Tells when the day is currently running.

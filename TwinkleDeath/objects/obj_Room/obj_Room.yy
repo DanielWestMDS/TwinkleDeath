@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Room",
-    "path":"sprites/spr_Room/spr_Room.yy",
+    "name":"spr_ScottRoom",
+    "path":"sprites/spr_ScottRoom/spr_ScottRoom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

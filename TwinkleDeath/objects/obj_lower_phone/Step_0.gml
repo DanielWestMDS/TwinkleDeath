@@ -13,13 +13,14 @@ if mouse_check_button_pressed(mb_left)
 			if (!global.b_phoneactive)
 			{
 				global.b_phoneactive = true;
+				image_index = 0;
 				//global.tab_open = 0;
 			}
 			else
 			{
 				// move everything related to the phone 
 				global.b_phoneactive = false;
-				
+				image_index = 1;
 				// disable feed
 				global.tab_open = 1;
 			}
