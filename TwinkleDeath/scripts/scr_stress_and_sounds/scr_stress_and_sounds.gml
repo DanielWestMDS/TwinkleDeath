@@ -8,6 +8,7 @@ Call when on specific chats, for example
 
 2) add_stressful_event(float)
 will divide by a number and add on top of the rate for a while.
+	max amount added should be 10 at a time
 
 Other functions here:
 get_stress_rate()
@@ -65,8 +66,8 @@ function get_stress_rate()
 function process_stress(_stress,_decay)
 {
 	//Current Stress
-	addingstress = (global.f_addingstress / 20);
-	currentstress = global.f_stressrate + addingstress*2;
+	addingstress = (global.f_addingstress / 10);
+	currentstress = global.f_stressrate + addingstress;
 	if (_decay)
 	{
 		global.f_addingstress -= addingstress;
