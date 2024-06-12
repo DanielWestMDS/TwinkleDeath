@@ -40,8 +40,6 @@ if (global.i_gameday != 60)
 	//Day Code
 	if (global.b_dayactive)
 	{
-		modify_stress();
-		
 		//Check end day Prompt
 		if (global.b_endday == true)
 		{
@@ -49,5 +47,8 @@ if (global.i_gameday != 60)
 		}
 	}
 	
+	if (!global.b_phoneactive)
+	{
 	move_with_cam(self, -1505, 0);
+	}
 }

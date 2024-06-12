@@ -49,35 +49,6 @@ break;
 global.i_worldday = worldday;
 }
 
-function modify_stress()
-{
-stress = global.f_stress;
-
-//Stress lowers if phone lowered
-if (global.b_phoneactive == true)
-{
-stress -= 0.1;
-}
-
-//Avoid Lower Limit
-if (stress <= 0)
-{
-stress = 0.0;
-}
-//Avoid upper limit
-if (stress >= 10.0)
-{
-stress = 0.0;
-}
-}
-
-//Allows adding stress to Scott.
-//Add in small dosages when Scott is doing certain things on his phone i guess
-function add_stress(_stress)
-{
-	global.f_stress += _stress;
-}
-
 
 function check_phone() 
 {

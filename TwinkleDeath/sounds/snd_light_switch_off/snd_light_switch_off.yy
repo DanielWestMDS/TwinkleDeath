@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_light_switch_off",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.264,
+  "name":"snd_light_switch_off",
+  "parent":{
+    "name":"Room",
+    "path":"folders/Sounds/Room.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_light_switch_off.mp3",
+  "type":0,
+  "volume":1.0,
+}
