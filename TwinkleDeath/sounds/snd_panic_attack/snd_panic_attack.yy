@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_panic_attack",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":93.888,
+  "name":"snd_panic_attack",
+  "parent":{
+    "name":"Scott",
+    "path":"folders/Sounds/Scott.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_panic_attack.mp3",
+  "type":0,
+  "volume":1.0,
+}
