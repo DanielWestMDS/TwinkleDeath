@@ -1,4 +1,14 @@
 /// @description Checking our status in the game
+if (!global.b_dayactive)
+{
+	b_resetroom = true;
+}
+if (global.b_dayactive && b_resetroom)
+{
+	obj_Room.x = -900;
+	b_resetroom = false;
+}
+
 
 if (global.i_gameday != 60)
 {
@@ -39,5 +49,5 @@ if (global.i_gameday != 60)
 		}
 	}
 	
-	
+	move_with_cam(self, -1505, 0);
 }
