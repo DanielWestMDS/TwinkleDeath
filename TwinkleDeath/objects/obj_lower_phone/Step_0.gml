@@ -14,6 +14,7 @@ if mouse_check_button_pressed(mb_left)
 			{
 				global.b_phoneactive = true;
 				//global.tab_open = 0;
+				image_index = 0;
 			}
 			else
 			{
@@ -22,6 +23,8 @@ if mouse_check_button_pressed(mb_left)
 				
 				// disable feed
 				global.tab_open = 1;
+				
+				image_index = 1;
 			}
 		}
     }

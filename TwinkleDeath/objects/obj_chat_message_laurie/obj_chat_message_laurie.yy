@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lower_phone",
+  "%Name":"obj_chat_message_laurie",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lower_phone",
+  "name":"obj_chat_message_laurie",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"Chats",
+    "path":"folders/Objects/Phone/Chats.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_chat_button_parent",
+    "path":"objects/obj_chat_button_parent/obj_chat_button_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lower_phone",
-    "path":"sprites/spr_lower_phone/spr_lower_phone.yy",
+    "name":"spr_message_group",
+    "path":"sprites/spr_message_group/spr_message_group.yy",
   },
   "spriteMaskId":null,
   "visible":true,
