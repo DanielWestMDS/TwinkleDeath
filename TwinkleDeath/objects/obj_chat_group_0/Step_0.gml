@@ -45,71 +45,31 @@ if (global.b_group_read == false)
 		{
 			case (0):
 			if (!global.b_selecting_message)
+			{
 				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
+			}
 				global.b_selecting_message = true;
 				dialogue(0);
 			break;
 			
-			case (8):
+			case (7):
 			if (!global.b_selecting_message)
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 1});
 				global.b_selecting_message = true;
+				current_messages_sent++;
 				dialogue(1);
 			break;
 			
-			case (10):
+			case (9):
 			if (!global.b_selecting_message)
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 2} );
 				global.b_selecting_message = true;
+				current_messages_sent++;
 				dialogue(2);
 			break;
 		}
 	//}
 	
-	if (y == start_height + (1 * 300))
-	{
-		// stop repopulating select dialogue once pressed
-		if (global.i_selected_message == 0)
-		{
-			// only make one dialogue
-			if (!b_dialogue_generated)
-			{
-				b_dialogue_generated = true;
-				global.b_selecting_message = true;
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
-			}
-		}
-		else if (global.i_selected_message == 1)
-		{
-			// change this to other image for multi dialogue options
-			image_index++;
-			// reset for no selected message
-			global.i_selected_message = 0;
-		}
-	}
-	
-		// dialogue option at certain message
-	if (image_index == 11)
-	{
-		// stop repopulating select dialogue once pressed
-		if (global.i_selected_message == 0)
-		{
-			// only make one dialogue
-			if (!b_dialogue_generated)
-			{
-				b_dialogue_generated = true;
-				global.b_selecting_message = true;
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 1});
-			}
-		}
-		else if (global.i_selected_message == 1)
-		{
-			// change this to other image for multi dialogue options
-			image_index++;
-			// reset for no selected message
-			global.i_selected_message = 0;
-		}
-	}
 	
 	// move to laurie chat at this message
 	if (current_messages_sent == 13)

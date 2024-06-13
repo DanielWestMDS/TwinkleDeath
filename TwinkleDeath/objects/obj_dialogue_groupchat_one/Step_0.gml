@@ -9,10 +9,10 @@ if mouse_check_button_pressed(mb_left)
 	{ 
 		// test
 		//url_open("https://www.victimsupport.org.nz/crimes-and-traumatic-events/stalking-harassment");
-		// reset globals once dialogue selected
-		global.b_selecting_message = false;
+
 		// may need to make other dialogue options for multiple selections
 		global.i_selected_message = 1;
+		global.i_current_responses++;
 		// perhaps check if other dialogue options exist and destroy those here
 		instance_destroy(self);
     }

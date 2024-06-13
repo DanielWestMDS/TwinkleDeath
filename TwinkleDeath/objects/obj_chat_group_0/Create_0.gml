@@ -38,6 +38,8 @@ function dialogue(_i_dialogue_number)
 {
 	if (global.i_selected_message != 0)
 	{
+		// reset globals once dialogue selected
+		global.b_selecting_message = false;
 		instance_create_layer(x + 200, 1300, "Chat", obj_responses_groupchat_one, {image_index : _i_dialogue_number});
 		current_messages_sent++;
 		y -= 100;

@@ -44,6 +44,8 @@ global.b_group_paused = false;
 
 // for moving scott messages
 global.i_response_distance = 0;
+global.i_current_responses = 0;
+global.i_responses_moved = 0;
 
 // how many chats to read 
 global.i_chats_to_read = 1;
