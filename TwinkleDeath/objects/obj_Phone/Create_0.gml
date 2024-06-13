@@ -42,6 +42,9 @@ global.b_adam_read = false;
 
 global.b_group_paused = false;
 
+// for moving scott messages
+global.i_response_distance = 0;
+
 // how many chats to read 
 global.i_chats_to_read = 1;
 

@@ -12,17 +12,19 @@ if mouse_check_button_pressed(mb_left)
 		{
 			if (current_messages_sent == 2 || current_messages_sent == 4)
 			{
+				global.i_response_distance = 480;
 				y -= 480;
 				current_messages_sent++;
 			}
 			else
 			{
+				global.i_response_distance = 110;
 				y -= 110;
 				current_messages_sent++;
 			}
 			current_y = y;
 			
-			if (y <= start_height - 800)
+			if (current_messages_sent >= 22)
 			{
 				b_chat_finished = true;	
 				//global.b_group_read = true;
@@ -36,24 +38,33 @@ if mouse_check_button_pressed(mb_left)
 
 if (global.b_group_read == false)
 {
-	if (global.i_selected_message == 0 && !global.b_selecting_message)
-	{
+	//if (global.i_selected_message == 0 && !global.b_selecting_message)
+	//{
 	// dialogue option at certain message
 		switch (current_messages_sent)
 		{
 			case (0):
+			if (!global.b_selecting_message)
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
+				global.b_selecting_message = true;
 				dialogue(0);
 			break;
 			
 			case (8):
+			if (!global.b_selecting_message)
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
+				global.b_selecting_message = true;
 				dialogue(1);
 			break;
 			
 			case (10):
+			if (!global.b_selecting_message)
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one);
+				global.b_selecting_message = true;
 				dialogue(2);
 			break;
 		}
-	}
+	//}
 	
 	if (y == start_height + (1 * 300))
 	{
