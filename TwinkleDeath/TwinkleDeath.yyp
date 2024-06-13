@@ -70,6 +70,7 @@
     {"id":{"name":"obj_phone_top","path":"objects/obj_phone_top/obj_phone_top.yy",},},
     {"id":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},},
     {"id":{"name":"obj_Quagsire","path":"objects/obj_Quagsire/obj_Quagsire.yy",},},
+    {"id":{"name":"obj_responses_groupchat_one","path":"objects/obj_responses_groupchat_one/obj_responses_groupchat_one.yy",},},
     {"id":{"name":"obj_Room","path":"objects/obj_Room/obj_Room.yy",},},
     {"id":{"name":"obj_SoundManager","path":"objects/obj_SoundManager/obj_SoundManager.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

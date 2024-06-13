@@ -35,5 +35,13 @@ if (global.b_group_paused)
 	current_y = y;
 	current_messages_sent = 17;
 }
+
+// create dialogue
+function dialogue(_i_dialogue_number)
+{
+	global.b_selecting_message = true;
+	instance_create_layer(x + 200, 1300, "Chat", obj_responses_groupchat_one, {image_index : _i_dialogue_number});
+	//instance_create_layer(300, 300, "Chat", obj_dialogue_groupchat_one, {image_index : _i_dialogue_number});
+}
 //image_xscale = 0.5;
 //image_yscale = 0.5;

@@ -36,7 +36,25 @@ if mouse_check_button_pressed(mb_left)
 
 if (global.b_group_read == false)
 {
+	if (global.i_selected_message == 0 && !global.b_selecting_message)
+	{
 	// dialogue option at certain message
+		switch (current_messages_sent)
+		{
+			case (0):
+				dialogue(0);
+			break;
+			
+			case (8):
+				dialogue(1);
+			break;
+			
+			case (10):
+				dialogue(2);
+			break;
+		}
+	}
+	
 	if (y == start_height + (1 * 300))
 	{
 		// stop repopulating select dialogue once pressed

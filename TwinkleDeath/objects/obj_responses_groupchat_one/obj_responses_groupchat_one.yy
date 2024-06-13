@@ -1,21 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_dialogue_groupchat_one",
+  "%Name":"obj_responses_groupchat_one",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_dialogue_groupchat_one",
+  "name":"obj_responses_groupchat_one",
   "overriddenProperties":[],
   "parent":{
     "name":"Chats",
     "path":"folders/Objects/Phone/Chats.yy",
   },
-  "parentObjectId":{
-    "name":"obj_chat_button_parent",
-    "path":"objects/obj_chat_button_parent/obj_chat_button_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
