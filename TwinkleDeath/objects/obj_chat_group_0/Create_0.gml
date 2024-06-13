@@ -12,7 +12,7 @@ image_speed = 0;
 start_height = y;
 current_y = y;
 
-current_message_offset = 0;
+current_messages_sent = 0;
 
 // dialogue bugging out
 b_dialogue_generated = false;
@@ -27,6 +27,13 @@ f_chat_length = sprite_get_info(spr_chat_group).num_subimages;
 if (global.b_group_read)
 {
 	image_index = f_chat_length - 1;
+}
+
+if (global.b_group_paused)
+{
+	y = -1600;
+	current_y = y;
+	current_messages_sent = 17;
 }
 //image_xscale = 0.5;
 //image_yscale = 0.5;

@@ -10,21 +10,28 @@ if mouse_check_button_pressed(mb_left)
 		// do not iterate messages if sending dialogue or chat is finished
 		if (!global.b_selecting_message && !global.b_group_read && !b_waiting)
 		{
-		    //iterate messages
-			y -= 300;
+			if (current_messages_sent == 2 || current_messages_sent == 4)
+			{
+				y -= 480;
+				current_messages_sent++;
+			}
+			else
+			{
+				y -= 110;
+				current_messages_sent++;
+			}
 			current_y = y;
+			
 			if (y <= start_height - 800)
 			{
 				b_chat_finished = true;	
-				global.b_group_read = true;
+				//global.b_group_read = true;
 				global.i_chats_read++;
 			}
 			//current_message_offset += 1;
 		}
 
     }
-	y -= 300;
-	current_y = y;
 }
 
 if (global.b_group_read == false)
@@ -75,12 +82,14 @@ if (global.b_group_read == false)
 		}
 	}
 	
-}
-
-// lock chat until laurie messages read
-if (image_index == 17)
-{
-	b_waiting = true;
+	// move to laurie chat at this message
+	if (current_messages_sent == 13)
+	{
+		// lock chat until laurie messages read
+		global.b_group_paused = true;
+		b_waiting = true;
+	}
+	
 }
 
 // teleport away if phone put away

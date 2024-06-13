@@ -40,6 +40,8 @@ global.b_justin_read = false;
 global.b_burner2_read = false;
 global.b_adam_read = false;
 
+global.b_group_paused = false;
+
 // how many chats to read 
 global.i_chats_to_read = 1;
 
