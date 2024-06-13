@@ -11,8 +11,9 @@ if mouse_check_button_pressed(mb_left)
 		if (!global.b_selecting_message && !global.b_group_read && !b_waiting)
 		{
 		    //iterate messages
-			y += 300;
-			if (y >= sprite_height - 800)
+			y -= 300;
+			current_y = y;
+			if (y <= start_height - 800)
 			{
 				b_chat_finished = true;	
 				global.b_group_read = true;
@@ -20,7 +21,10 @@ if mouse_check_button_pressed(mb_left)
 			}
 			//current_message_offset += 1;
 		}
+
     }
+	y -= 300;
+	current_y = y;
 }
 
 if (global.b_group_read == false)
@@ -87,8 +91,8 @@ if (!global.b_phoneactive)
 }
 else
 {
-	x = room_width / 2;
-	y = room_height / 2;
+	x = 1025;
+	y = current_y;
 }
 
 // Inherit the parent event

@@ -10,6 +10,7 @@ image_speed = 0;
 
 // start height
 start_height = y;
+current_y = y;
 
 current_message_offset = 0;
 
