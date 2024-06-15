@@ -15,6 +15,8 @@ if mouse_check_button_pressed(mb_left)
 				global.i_response_distance = 480;
 				y -= 480;
 				current_messages_sent++;
+				
+				instance_create_layer(1140, 1140, "Chat", obj_post);
 			}
 			else
 			{
