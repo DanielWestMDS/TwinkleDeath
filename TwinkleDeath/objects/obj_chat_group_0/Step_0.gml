@@ -23,14 +23,6 @@ if mouse_check_button_pressed(mb_left)
 				current_messages_sent++;
 			}
 			current_y = y;
-			
-			if (current_messages_sent >= 22)
-			{
-				b_chat_finished = true;	
-				//global.b_group_read = true;
-				global.i_chats_read++;
-			}
-			//current_message_offset += 1;
 		}
 
     }
@@ -54,18 +46,35 @@ if (global.b_group_read == false)
 			
 			case (7):
 			if (!global.b_selecting_message)
+			{
 				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 1});
+			}
 				global.b_selecting_message = true;
-				current_messages_sent++;
 				dialogue(1);
 			break;
 			
-			case (9):
+			case (20):
 			if (!global.b_selecting_message)
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 2} );
+			{
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 2});
+			}
 				global.b_selecting_message = true;
-				current_messages_sent++;
 				dialogue(2);
+			break;
+			
+			case (23):
+			if (!global.b_selecting_message)
+			{
+				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 3});
+			}
+				global.b_selecting_message = true;
+				dialogue(3);
+			break;
+			
+			case (25):
+				global.b_group_read = true;
+				global.i_chats_read++;
+				b_chat_finished = true;
 			break;
 		}
 	//}

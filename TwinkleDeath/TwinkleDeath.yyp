@@ -104,6 +104,7 @@
     {"id":{"name":"spr_journal","path":"sprites/spr_journal/spr_journal.yy",},},
     {"id":{"name":"spr_lower_phone","path":"sprites/spr_lower_phone/spr_lower_phone.yy",},},
     {"id":{"name":"spr_message_group","path":"sprites/spr_message_group/spr_message_group.yy",},},
+    {"id":{"name":"spr_message_laurie","path":"sprites/spr_message_laurie/spr_message_laurie.yy",},},
     {"id":{"name":"spr_phone_top","path":"sprites/spr_phone_top/spr_phone_top.yy",},},
     {"id":{"name":"spr_phone","path":"sprites/spr_phone/spr_phone.yy",},},
     {"id":{"name":"spr_post_plc","path":"sprites/spr_post_plc/spr_post_plc.yy",},},

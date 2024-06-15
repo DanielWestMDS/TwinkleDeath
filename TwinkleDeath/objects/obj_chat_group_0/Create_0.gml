@@ -23,7 +23,7 @@ b_chat_finished = false;
 
 if (global.b_group_read)
 {
-	image_index = f_chat_length - 1;
+	y = -2260;
 }
 
 if (global.b_group_paused)
@@ -31,6 +31,17 @@ if (global.b_group_paused)
 	y = -1600;
 	current_y = y;
 	current_messages_sent = 17;
+	instance_create_layer(x + 200, 500, "Chat", obj_responses_groupchat_one, {image_index : 1});
+	global.i_current_responses = 1;
+	
+	if (global.b_laurie_read)
+	{
+		b_waiting = false;	
+	}
+	else
+	{
+		b_waiting = true;
+	}
 }
 
 // create dialogue
@@ -40,6 +51,7 @@ function dialogue(_i_dialogue_number)
 	{
 		// reset globals once dialogue selected
 		global.b_selecting_message = false;
+		global.i_selected_message = 0;
 		instance_create_layer(x + 200, 1300, "Chat", obj_responses_groupchat_one, {image_index : _i_dialogue_number});
 		current_messages_sent++;
 		y -= 100;
