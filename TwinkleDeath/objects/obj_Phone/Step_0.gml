@@ -27,7 +27,7 @@ else
 switch(global.i_gameday)
 {
 	case(1):
-		global.i_chats_to_read = 1;
+		global.i_chats_to_read = 2;
 	break;
 	
 	case(2):

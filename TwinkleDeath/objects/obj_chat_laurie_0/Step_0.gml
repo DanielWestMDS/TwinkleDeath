@@ -10,8 +10,8 @@ if mouse_check_button_pressed(mb_left)
 		// do not iterate messages if sending dialogue or chat is finished
 		if (!global.b_selecting_message && !global.b_laurie_read && !b_waiting)
 		{
-			global.i_response_distance = 110;
-			y -= 110;
+			global.i_response_distance = 230;
+			y -= 230;
 			current_messages_sent++;
 			current_y = y;
 		}
@@ -38,31 +38,13 @@ if (global.b_laurie_read == false)
 				selectbutton(2);
 			break;
 			
-			case (23):
-			if (!global.b_selecting_message)
-			{
-				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 3});
-			}
-				global.b_selecting_message = true;
-				dialogue(3);
-			break;
-			
-			case (25):
-				global.b_group_read = true;
+			case (6):
+				global.b_laurie_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;
 			break;
 		}
 	//}
-	
-	
-	// move to laurie chat at this message
-	if (current_messages_sent == 13)
-	{
-		// lock chat until laurie messages read
-		global.b_group_paused = true;
-		b_waiting = true;
-	}
 	
 }
 

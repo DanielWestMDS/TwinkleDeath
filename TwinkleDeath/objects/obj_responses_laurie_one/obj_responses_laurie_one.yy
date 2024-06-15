@@ -10,8 +10,8 @@
   "name":"obj_responses_laurie_one",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chats",
-    "path":"folders/Objects/Phone/Chats.yy",
+    "name":"responses",
+    "path":"folders/Objects/Phone/Chats/responses.yy",
   },
   "parentObjectId":{
     "name":"obj_response_parent",

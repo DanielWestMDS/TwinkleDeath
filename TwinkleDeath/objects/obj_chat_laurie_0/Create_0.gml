@@ -24,6 +24,8 @@ b_chat_finished = false;
 obj_dialogue = obj_dialogue_laurie_one;
 obj_response = obj_responses_laurie_one;
 
+global.i_current_responses = 0;
+
 if (global.b_laurie_read)
 {
 	y = 200;

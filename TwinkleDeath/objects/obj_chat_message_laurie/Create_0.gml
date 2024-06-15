@@ -3,7 +3,7 @@
 
 order = 0;
 
-if (global.b_group_read)
+if (global.b_laurie_read)
 {
 	image_index = 1;
 }
