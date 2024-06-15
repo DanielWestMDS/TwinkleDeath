@@ -5,7 +5,7 @@
 switch(global.tab_open)
 {
 	case TABS.FEED:
-		image_index = 0;
+		image_index = 0;	
 	break;
 	
 	case TABS.MESSAGES:

@@ -14,7 +14,8 @@ if mouse_check_button_pressed(mb_left)
 			global.b_chat_opened = false;
 		
 			// add chats
-			//instance_create_layer(1344, 128, "Chat", obj_chat_button_select);
+			if (object_exists(obj_chat_button_select))
+			instance_create_layer(1344, 128, "Chat", obj_chat_button_select);
 			
 			// change phone sprite
 			global.tab_open = 0;

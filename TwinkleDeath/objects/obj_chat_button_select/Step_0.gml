@@ -7,15 +7,18 @@ if mouse_check_button_pressed(mb_left)
 	//Arguments are (x, y, obj, prec, notme)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
+		if (global.tab_open != 1)
+		{
 		// chat tab opened
 		//global.b_chat_opened = true;
 		// set message tab selected
 		global.tab_open = 1;
 		// create each chat button
 		instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
-		//instance_create_layer(room_width / 2, (room_height / 2) + 200, "Chat", obj_chat_message_laurie);
+		instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
 		//instance_destroy(self);
-    }
+		}   
+	}
 }
 
 // teleport away if phone put away

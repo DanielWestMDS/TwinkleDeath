@@ -8,17 +8,27 @@ depth = -10;
 // only iterate messages on click
 image_speed = 0;
 
+// start height
+start_height = y;
+current_y = y;
+
+current_messages_sent = 0;
+
 // dialogue bugging out
 b_dialogue_generated = false;
 
+b_waiting = false;
+
 b_chat_finished = false;
 
-// number of messages in this chat
-f_chat_length = sprite_get_info(spr_chat_group).num_subimages;
+obj_dialogue = obj_dialogue_laurie_one;
+obj_response = obj_responses_laurie_one;
 
-if (global.b_group_read)
+if (global.b_laurie_read)
 {
-	image_index = f_chat_length - 1;
+	y = 200;
 }
+
+event_inherited();
 //image_xscale = 0.5;
 //image_yscale = 0.5;

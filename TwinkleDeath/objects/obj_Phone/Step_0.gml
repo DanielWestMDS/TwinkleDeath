@@ -38,3 +38,8 @@ switch(global.i_gameday)
 		global.i_chats_to_read = 2;
 	break;
 }
+
+if (global.tab_open != 1)
+{
+	global.b_chat_opened = false;
+}

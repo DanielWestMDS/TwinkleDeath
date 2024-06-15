@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_group_2",
+  "%Name":"obj_dialogue_laurie_one",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_group_2",
+  "name":"obj_dialogue_laurie_one",
   "overriddenProperties":[],
   "parent":{
     "name":"Chats",
     "path":"folders/Objects/Phone/Chats.yy",
   },
   "parentObjectId":{
-    "name":"obj_chat_parent",
-    "path":"objects/obj_chat_parent/obj_chat_parent.yy",
+    "name":"obj_chat_button_parent",
+    "path":"objects/obj_chat_button_parent/obj_chat_button_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_group",
-    "path":"sprites/spr_chat_group/spr_chat_group.yy",
+    "name":"spr_laurie_response_0",
+    "path":"sprites/spr_laurie_response_0/spr_laurie_response_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,
