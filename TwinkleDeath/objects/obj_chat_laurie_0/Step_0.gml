@@ -27,15 +27,15 @@ if (global.b_laurie_read == false)
 		switch (current_messages_sent)
 		{
 			case (0):
-				selectbutton(0);
+				selectbutton(0, true);
 			break;
 			
 			case (2):
-				selectbutton(1);
+				selectbutton(1, false);
 			break;
 			
 			case (4):
-				selectbutton(2);
+				selectbutton(2, true);
 			break;
 			
 			case (6):

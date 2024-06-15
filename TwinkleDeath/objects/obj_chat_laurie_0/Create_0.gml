@@ -10,7 +10,6 @@ image_speed = 0;
 
 // start height
 start_height = y;
-current_y = y;
 
 current_messages_sent = 0;
 
@@ -30,6 +29,8 @@ if (global.b_laurie_read)
 {
 	y = 200;
 }
+
+current_y = y;
 
 event_inherited();
 //image_xscale = 0.5;

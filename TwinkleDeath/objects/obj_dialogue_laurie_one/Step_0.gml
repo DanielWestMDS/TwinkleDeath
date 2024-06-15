@@ -11,14 +11,22 @@ if mouse_check_button_pressed(mb_left)
 		//url_open("https://www.victimsupport.org.nz/crimes-and-traumatic-events/stalking-harassment");
 
 		// may need to make other dialogue options for multiple selections
-		global.i_selected_message = 1;
+		
+		if (image_index == 1 || image_index == 4)
+		{
+			global.i_selected_message = 2;
+		}
+		else
+		{
+			global.i_selected_message = 1;
+		}
 		global.i_current_responses++;
 		// perhaps check if other dialogue options exist and destroy those here
 		instance_destroy(self);
     }
 }
 
-if (global.b_chat_opened == false)
+if (global.b_chat_opened == false || !global.b_selecting_message)
 {
 	instance_destroy();
 }
