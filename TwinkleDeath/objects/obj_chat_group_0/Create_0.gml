@@ -14,6 +14,8 @@ current_y = y;
 
 current_messages_sent = 0;
 
+posts_sent = 0;
+
 // dialogue bugging out
 b_dialogue_generated = false;
 

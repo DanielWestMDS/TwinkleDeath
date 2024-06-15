@@ -16,7 +16,16 @@ if mouse_check_button_pressed(mb_left)
 				y -= 480;
 				current_messages_sent++;
 				
-				instance_create_layer(1140, 1140, "Chat", obj_post);
+				if (posts_sent == 0)
+				{
+					posts_sent++;
+					instance_create_layer(1290, 1330, "Chat", obj_post, {sprite_index : spr_post0});
+				}
+				else
+				{
+					instance_create_layer(1290, 1330, "Chat", obj_post, {sprite_index : spr_post1});
+				}
+				global.i_current_responses++;
 			}
 			else
 			{

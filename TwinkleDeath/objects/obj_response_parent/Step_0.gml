@@ -19,3 +19,13 @@ if (global.tab_open != 1)
 }
 
 y = new_y;
+
+// dissappear if phone put away
+if (!global.b_phoneactive)
+{
+	image_alpha = 0;
+}
+else
+{
+	image_alpha = 1;
+}
