@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_message_chris",
+  "%Name":"obj_dialogue_chris_two",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_message_chris",
+  "name":"obj_dialogue_chris_two",
   "overriddenProperties":[],
   "parent":{
-    "name":"other",
-    "path":"folders/Objects/Phone/Chats/other.yy",
+    "name":"responses",
+    "path":"folders/Objects/Phone/Chats/responses.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_button_parent",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_DaysUI",
-    "path":"sprites/spr_DaysUI/spr_DaysUI.yy",
+    "name":"spr_chris_response_1",
+    "path":"sprites/spr_chris_response_1/spr_chris_response_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

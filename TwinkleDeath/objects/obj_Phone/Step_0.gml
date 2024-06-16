@@ -31,10 +31,26 @@ switch(global.i_gameday)
 	break;
 	
 	case(2):
-		global.i_chats_to_read = 1;
+		global.i_chats_to_read = 3;
 	break;
 	
 	case(3):
+		global.i_chats_to_read = 2;
+	break;
+	
+	case(4):
+		global.i_chats_to_read = 2;
+	break;
+	
+	case(5):
+		global.i_chats_to_read = 3;
+	break;
+	
+	case(6):
+		global.i_chats_to_read = 2;
+	break;
+	
+	case(7):
 		global.i_chats_to_read = 2;
 	break;
 }

@@ -8,7 +8,7 @@ if mouse_check_button_pressed(mb_left)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
 		// do not iterate messages if sending dialogue or chat is finished
-		if (!global.b_selecting_message && !global.b_laurie_read && !b_waiting)
+		if (!global.b_selecting_message && !global.b_chris_read && !b_waiting && !b_chat_finished)
 		{
 			global.i_response_distance = 230;
 			y -= 230;
@@ -19,7 +19,7 @@ if mouse_check_button_pressed(mb_left)
     }
 }
 
-if (global.b_laurie_read == false)
+if (global.b_chris_read == false)
 {
 	//if (global.i_selected_message == 0 && !global.b_selecting_message)
 	//{
@@ -39,9 +39,14 @@ if (global.b_laurie_read == false)
 			break;
 			
 			case (6):
-				global.b_laurie_read = true;
+				global.b_chris_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;
+				//selectbutton(3, true)
+			break;
+			
+			case (8):
+
 			break;
 		}
 	//}

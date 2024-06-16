@@ -35,13 +35,13 @@ if (global.b_laurie_read == false)
 			break;
 			
 			case (4):
-				selectbutton(2, true);
-			break;
-			
-			case (6):
 				global.b_laurie_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;
+			break;
+			
+			case (6):
+
 			break;
 		}
 	//}

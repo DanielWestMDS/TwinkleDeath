@@ -21,7 +21,7 @@ if (global.i_chats_read == global.i_chats_to_read)
 				// global bools for each chat
 				global.b_group_read = false;
 				global.b_laurie_read = false;
-				global.b_crispin_read = false;
+				global.b_chris_read = false;
 				global.b_burner_read = false;
 				global.b_leo_read = false;
 				global.b_justin_read = false;
