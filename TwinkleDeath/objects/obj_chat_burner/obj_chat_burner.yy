@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_group_5",
+  "%Name":"obj_chat_burner",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_group_5",
+  "name":"obj_chat_burner",
   "overriddenProperties":[],
   "parent":{
-    "name":"day6",
-    "path":"folders/Objects/Phone/Chats/day6.yy",
+    "name":"day5",
+    "path":"folders/Objects/Phone/Chats/day5.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_parent",
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_group_4",
-    "path":"sprites/spr_chat_group_4/spr_chat_group_4.yy",
+    "name":"spr_chat_laurie_4",
+    "path":"sprites/spr_chat_laurie_4/spr_chat_laurie_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,
