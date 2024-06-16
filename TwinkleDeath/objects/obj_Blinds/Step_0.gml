@@ -1,46 +1,46 @@
 
-//Set whether it is day or night
-if (global.e_time_of_day == E_TIMEOFDAY.MORNING || global.e_time_of_day == E_TIMEOFDAY.AFTERNOON)
-{
-	b_day = true;
-}
-else
-{
-	b_day = false;
-}
-
-//Set if the blinds start open or closed in the day
-if (global.i_gameday == 1)
-{
-	b_startopen = true;
-}
-else
-{
-	b_startopen = false;
-}
-
 //Resets Room on new day
 if (!global.b_dayactive)
 {
-	b_resetroom = true;
+	i_resetroom = 0;
 }
-if (global.b_dayactive && b_resetroom)
+if (global.b_dayactive && i_resetroom != 2)
 {
 	self.x = -900;
-	b_resetroom = false;
+	i_resetroom++;
 	
 	image_speed = 0;
-	//Set Which Blinds we are using
-	if (b_day == true)
+	
+	//Set whether it is day or night
+	if (global.e_time_of_day == E_TIMEOFDAY.MORNING || global.e_time_of_day == E_TIMEOFDAY.AFTERNOON)
 	{
-		i_openblinds = 5;
-		i_closeblinds = 9;
+		b_day = true;
 	}
 	else
 	{
+		b_day = false;
+	}
+	//Set if the blinds start open or closed in the day
+	if (global.i_gameday == 1)
+	{
+		b_startopen = true;
+	}
+	else
+	{
+		b_startopen = false;
+	}
+	
+	//Set Which Blinds we are using
+	if (b_day == true)
+	{
+		i_openblinds = 6;
+		i_closeblinds = 10;
+	}
+	if (b_day == false)
+	{
 		//Night
-		i_openblinds = 0;
-		i_closeblinds = 4;
+		i_openblinds = 1;
+		i_closeblinds = 5;
 	}
 	
 	//Set Starting Blinds
@@ -68,15 +68,18 @@ if mouse_check_button_pressed(mb_left)
 	{
 		if (!b_animating)
 		{
-			b_goalstate = !b_open; //Set desired position: Open, or closed?
 			if (b_open)
 			{
-				image_speed = 0.5; //Cycle forward to close\
+				image_speed = 1; //Cycle forward to close\
+				i_goalframe = i_closeblinds;
+				image_index = i_openblinds;
 				show_debug_message("Closing");
 			}
 			else
 			{
-				image_speed = -0.5; //Cycle back to open
+				image_speed = -1; //Cycle back to open
+				i_goalframe = i_openblinds;
+				image_index = i_closeblinds;
 				show_debug_message("Opening");
 			}
 			b_animating = true;
@@ -85,18 +88,20 @@ if mouse_check_button_pressed(mb_left)
 }
 //Animation
 if (b_animating)
-		{
-			//Process of Animating
-			if (b_goalstate == true && image_index == i_openblinds)
+{
+			if (i_goalframe == image_index)
 			{
-				b_open = true;
 				image_speed = 0;
+				
 				b_animating = false;
+				b_open = !b_open;
+				if (b_open)
+				{
+					image_index = i_openblinds;
+				}
+				else
+				{
+					image_index = i_closeblinds;
+				}
 			}
-			else if (b_goalstate == false && image_index == i_closeblinds)
-			{
-				b_open = false;
-				image_speed = 0;
-				b_animating = false;
-			}
-		}
+}
