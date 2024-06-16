@@ -12,3 +12,7 @@ global.b_endday = false; //Modified by Phone when they reach a condition that de
 
 
 global.b_phoneactive = false; //A check to see if the player has raised or lowered their phone.
+
+// setting to fullscreen so you can see everythgin
+window_set_fullscreen(true);
+
