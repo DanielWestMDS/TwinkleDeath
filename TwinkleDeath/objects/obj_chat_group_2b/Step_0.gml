@@ -57,7 +57,12 @@ if (global.b_group_read == false)
 			break;
 			
 			case (15):
-				global.b_group_paused = true;
+			if (!b_chat_finished)
+			{
+				global.b_group_read = true;
+				global.i_chats_read++;
+				b_chat_finished = true;
+			}
 			break;
 		}
 	//}

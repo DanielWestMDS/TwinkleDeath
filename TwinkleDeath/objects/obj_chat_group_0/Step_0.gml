@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.i_gameday != 1)
+{
+	instance_destroy();	
+}
+
 // do something if mouse clicks
 if mouse_check_button_pressed(mb_left) 
 {
@@ -83,9 +88,12 @@ if (global.b_group_read == false)
 			break;
 			
 			case (25):
+			if (!b_chat_finished)
+			{
 				global.b_group_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;
+			}
 			break;
 		}
 	//}

@@ -13,12 +13,20 @@ if mouse_check_button_pressed(mb_left)
 			if (current_messages_sent == 0)
 			{
 				//global.i_response_distance = 680;
+				if (global.i_current_responses > 0)
+				{
+					global.i_response_distance = 300;
+				}
 				y -= 300;
 				current_messages_sent++;
 			}
-			else if (current_messages_sent == 6)
+			else if (current_messages_sent == 7 || current_messages_sent == 9 || current_messages_sent == 13)
 			{
-				y -= 180;
+				if (global.i_current_responses > 0)
+				{
+					global.i_response_distance = 200;
+				}
+				y -= 200;
 				current_messages_sent++;
 			}
 			else
@@ -46,15 +54,15 @@ if (global.b_group_read == false)
 				selectbutton(0, false);
 			break;
 			
-			case (8):
+			case (9):
 				selectbutton(1, true);
 			break;
 			
-			case (13):
+			case (14):
 				selectbutton(2, true);
 			break;
 			
-			case (14):
+			case (16):
 				global.b_group_paused = true;
 			break;
 		}

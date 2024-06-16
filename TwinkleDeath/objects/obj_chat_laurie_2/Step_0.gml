@@ -27,10 +27,17 @@ if (global.b_laurie_read == false)
 		switch (current_messages_sent)
 		{
 			case (0):
-				selectbutton(0, true);
+				selectbutton(0, false);
 			break;
 			
-			case (2):
+			case (1):
+			if (!global.b_selecting_message)
+			{
+				global.i_response_distance = 230;
+				y -= 230;
+				current_messages_sent++;
+				current_y = y;
+			}
 				selectbutton(1, false);
 			break;
 			
