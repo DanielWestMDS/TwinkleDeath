@@ -17,7 +17,7 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Phone","folderPath":"folders/Objects/Phone.yy","name":"Phone","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Chats","folderPath":"folders/Objects/Phone/Chats.yy","name":"Chats","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"chats","folderPath":"folders/Objects/Phone/Chats/chats.yy","name":"chats","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"messages","folderPath":"folders/Objects/Phone/Chats/messages.yy","name":"messages","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"other","folderPath":"folders/Objects/Phone/Chats/other.yy","name":"other","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"responses","folderPath":"folders/Objects/Phone/Chats/responses.yy","name":"responses","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Feed","folderPath":"folders/Objects/Phone/Feed.yy","name":"Feed","resourceType":"GMFolder","resourceVersion":"2.0",},
