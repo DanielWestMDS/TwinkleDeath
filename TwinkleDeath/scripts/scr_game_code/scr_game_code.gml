@@ -246,7 +246,14 @@ function setjournal(_transparency)
 	{
 		//BedLamp
 		image_index = 1;
-		obj_journal.x = obj_Room.x - 800;
-		obj_journal.y = 150;
+		obj_journal.x = obj_Room.x + 3120;
+		obj_journal.y = 925;
+	}
+	else
+	{
+		//Assuming Night as Default
+		image_index = 1;
+		obj_journal.x = obj_Room.x + 3120;
+		obj_journal.y = 925;
 	}
 }
