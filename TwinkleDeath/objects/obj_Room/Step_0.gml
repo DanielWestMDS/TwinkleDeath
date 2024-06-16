@@ -52,3 +52,12 @@ if (global.i_gameday != 60)
 	move_with_cam(self, -1505, 0);
 	}
 }
+
+if (global.e_time_of_day == E_TIMEOFDAY.MORNING || global.e_time_of_day == E_TIMEOFDAY.AFTERNOON)
+{
+	image_index = 1;
+}
+else
+{
+	image_index = 0;
+}

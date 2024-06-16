@@ -5,6 +5,7 @@ fadecooldownmin = 40;
 fadein = true;
 fadecooldowncurrent = 40;
 alpha = 0;
+depth = -5;
 
 //For any who read this:
 // Fade is automated based on if the day is active

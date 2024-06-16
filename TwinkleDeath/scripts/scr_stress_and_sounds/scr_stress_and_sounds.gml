@@ -75,8 +75,53 @@ function process_stress(_stress,_decay)
 		{
 			global.f_addingstress = 0;
 		}
-		show_debug_message("decay by " + string(addingstress));
 		return currentstress;
 	}
 	return 0;
+}
+
+function stop_sounds()
+{
+	if (audio_is_playing(snd_stresstest))
+    {
+        audio_stop_sound(snd_stresstest);
+    }
+	if (audio_is_playing(snd_room_tone))
+    {
+        audio_stop_sound(snd_room_tone);
+    }
+	if (audio_is_playing(snd_dark_ambient))
+    {
+        audio_stop_sound(snd_dark_ambient);
+    }
+	if (audio_is_playing(snd_panic_attack))
+    {
+        audio_stop_sound(snd_panic_attack);
+    }
+	if (audio_is_playing(snd_crickets))
+    {
+        audio_stop_sound(snd_crickets);
+    }
+}
+
+function choose_backtrack()
+{
+	if (global.i_gameday <= 5)
+		{
+			show_debug_message("sound");
+			audio_play_sound_on(global.music_emitter, snd_room_tone, true, 0);
+		}
+		else
+		{
+			show_debug_message("sound");
+			audio_play_sound_on(global.music_emitter, snd_dark_ambient, true, 0);
+		}
+	if (global.e_time_of_day == E_TIMEOFDAY.MORNING || global.e_time_of_day == E_TIMEOFDAY.AFTERNOON)
+	{
+		
+	}
+	else if (global.e_time_of_day == E_TIMEOFDAY.EVENING || global.e_time_of_day == E_TIMEOFDAY.NIGHT)
+	{
+		audio_play_sound_on(global.background_emitter, snd_crickets, true, 0);
+	}
 }
