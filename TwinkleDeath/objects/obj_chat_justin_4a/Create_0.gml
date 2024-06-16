@@ -25,11 +25,6 @@ obj_response = obj_responses_justin_a;
 
 global.i_current_responses = 0;
 
-if (global.b_laurie_read)
-{
-	y = 200;
-}
-
 current_y = y;
 
 event_inherited();

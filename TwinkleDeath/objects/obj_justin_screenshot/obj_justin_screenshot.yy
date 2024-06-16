@@ -9,7 +9,10 @@
     "name":"day5",
     "path":"folders/Objects/Phone/Chats/day5.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_response_parent",
+    "path":"objects/obj_response_parent/obj_response_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

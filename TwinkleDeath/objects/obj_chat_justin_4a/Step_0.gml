@@ -8,17 +8,29 @@ if mouse_check_button_pressed(mb_left)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
 		// do not iterate messages if sending dialogue or chat is finished
-		if (!global.b_selecting_message && !global.b_laurie_read && !b_waiting)
+		if (!global.b_selecting_message && !b_waiting && !b_chat_finished)
 		{
-			global.i_response_distance = 100;
-			y -= 100;
-			current_messages_sent++;
+			if (current_messages_sent == 3)
+			{
+				global.i_response_distance = 700;
+				y-= 700;
+				current_messages_sent++;
+			}
+			else
+			{
+				if (global.i_current_responses > 0)
+				{
+					global.i_response_distance = 200;
+				}
+				y -= 200;
+				current_messages_sent++;
+			}
 			current_y = y;
 		}
     }
 }
 
-if (global.b_laurie_read == false)
+if (global.b_laurie_read == true)
 {
 	//if (global.i_selected_message == 0 && !global.b_selecting_message)
 	//{
@@ -29,15 +41,28 @@ if (global.b_laurie_read == false)
 				selectbutton(0, false);
 			break;
 			
-			case (2):
-				selectbutton(1, true);
+			case (3):
+			if (!global.b_selecting_message)
+			{
+				instance_create_layer(1650, 1000, "instances", obj_dialogue, {image_index :1});
+				global.b_selecting_message = true;
+			}
+			
+			if (global.i_selected_message != 0)
+			{
+				instance_create_layer(x + 500, 1800, "Chat", obj_justin_screenshot);
+				// reset globals once dialogue selected
+				global.b_selecting_message = false;
+				global.i_selected_message = 0;
+				current_messages_sent++;
+			}
 			break;
 			
-			case (4):
+			case (9):
 				selectbutton(2, false);
 			break;
 			
-			case (5):
+			case (11):
 				global.b_justin_read = true;
 				global.i_chats_read++;
 				global.b_selecting_message = false;
