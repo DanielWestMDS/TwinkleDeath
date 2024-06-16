@@ -9,8 +9,8 @@
   "name":"obj_chat_message_laurie",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chats",
-    "path":"folders/Objects/Phone/Chats.yy",
+    "name":"other",
+    "path":"folders/Objects/Phone/Chats/other.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_button_parent",

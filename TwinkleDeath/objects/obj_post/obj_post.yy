@@ -8,8 +8,8 @@
   "name":"obj_post",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chats",
-    "path":"folders/Objects/Phone/Chats.yy",
+    "name":"other",
+    "path":"folders/Objects/Phone/Chats/other.yy",
   },
   "parentObjectId":{
     "name":"obj_response_parent",

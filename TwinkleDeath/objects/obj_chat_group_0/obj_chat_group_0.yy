@@ -10,8 +10,8 @@
   "name":"obj_chat_group_0",
   "overriddenProperties":[],
   "parent":{
-    "name":"Chats",
-    "path":"folders/Objects/Phone/Chats.yy",
+    "name":"chats",
+    "path":"folders/Objects/Phone/Chats/chats.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_parent",
