@@ -7,6 +7,6 @@ draw_self();
 
 if(global.b_dayactive)
 {
-	draw_text(2450, 110, string(s_month_num + s_month_num_close + " " + s_month));
+	draw_text(2420, 110, string(s_month_num + s_month_num_close + " " + s_month));
 	draw_text(2230, 60, string(s_weekday + string(" ") + s_time_of_day));
 }
