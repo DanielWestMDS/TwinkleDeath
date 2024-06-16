@@ -48,15 +48,15 @@ if (global.b_group_read == false)
 	// dialogue option at certain message
 		switch (current_messages_sent)
 		{
-			case (8):
+			case (3):
 				selectbutton(0, true);
 			break;
 			
-			case (14):
-				selectbutton(1, false);
+			case (6):
+				selectbutton(1, true);
 			break;
 			
-			case (15):
+			case (9):
 			if (!b_chat_finished)
 			{
 				global.b_group_read = true;

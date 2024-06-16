@@ -30,7 +30,7 @@ if (global.b_laurie_read == false)
 				selectbutton(0, false);
 			break;
 			
-			case (1):
+			case (2):
 			if (!global.b_selecting_message)
 			{
 				global.i_response_distance = 230;
@@ -41,9 +41,10 @@ if (global.b_laurie_read == false)
 				selectbutton(1, false);
 			break;
 			
-			case (4):
+			case (3):
 				global.b_laurie_read = true;
 				global.i_chats_read++;
+				global.b_selecting_message = false;
 				b_chat_finished = true;
 			break;
 			
