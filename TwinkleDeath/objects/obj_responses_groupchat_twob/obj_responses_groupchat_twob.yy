@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_group_1b",
+  "%Name":"obj_responses_groupchat_twob",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_group_1b",
+  "name":"obj_responses_groupchat_twob",
   "overriddenProperties":[],
   "parent":{
-    "name":"messages",
-    "path":"folders/Objects/Phone/Chats/messages.yy",
+    "name":"responses",
+    "path":"folders/Objects/Phone/Chats/responses.yy",
   },
   "parentObjectId":{
-    "name":"obj_chat_parent",
-    "path":"objects/obj_chat_parent/obj_chat_parent.yy",
+    "name":"obj_response_parent",
+    "path":"objects/obj_response_parent/obj_response_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_group_1b",
-    "path":"sprites/spr_chat_group_1b/spr_chat_group_1b.yy",
+    "name":"spr_group_response_1b",
+    "path":"sprites/spr_group_response_1b/spr_group_response_1b.yy",
   },
   "spriteMaskId":null,
   "visible":true,

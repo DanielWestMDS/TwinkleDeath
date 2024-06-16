@@ -28,7 +28,7 @@ if mouse_check_button_pressed(mb_left)
 			
 			case(3):
 			// day 2 group chat
-				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_group_2);
+				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_group_1b);
 			break;
 		
 		}
