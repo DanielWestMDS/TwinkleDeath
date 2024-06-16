@@ -75,7 +75,6 @@ function process_stress(_stress,_decay)
 		{
 			global.f_addingstress = 0;
 		}
-		show_debug_message("decay by " + string(addingstress));
 		return currentstress;
 	}
 	return 0;

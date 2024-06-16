@@ -6,7 +6,7 @@ if mouse_check_button_pressed(mb_left)
         //Spin
 		spin = true;
     }
-	show_debug_message(string(mouse_x) + " " + string(mouse_y))
+	//show_debug_message(string(mouse_x) + " " + string(mouse_y))
 }
 
 if (spin)
