@@ -218,8 +218,6 @@ function move_with_cam(_Object, _min, _max)
 	//fix bounding issues
 	boundhigh = _Object.x - _min;
 	boundlow = _max - _Object.x;
-	show_debug_message(boundhigh);
-	show_debug_message(boundlow);
 	if (boundlow < 0)
 	{
 		_Object.x += boundlow - 0.1;

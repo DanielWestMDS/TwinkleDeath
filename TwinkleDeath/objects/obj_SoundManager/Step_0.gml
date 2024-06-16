@@ -9,7 +9,6 @@ if (f_stress < 0)
 if (b_decay)
 {
 	b_decay = !b_decay;
-	show_debug_message("stress is " + string(f_stress));
 }
 
 fcooldowntimer--;

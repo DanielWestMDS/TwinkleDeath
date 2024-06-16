@@ -43,7 +43,7 @@ s_time_of_day = " ";
 
 e_month_num = 1;
 e_month = E_MONTH.JANUARY;
-e_time_of_day = E_TIMEOFDAY.NIGHT;
+global.e_time_of_day = E_TIMEOFDAY.NIGHT;
 e_weekday = E_WEEKDAY.SUNDAY;
 
 b_changeday = true;
