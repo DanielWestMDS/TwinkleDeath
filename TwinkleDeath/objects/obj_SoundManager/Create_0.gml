@@ -8,3 +8,7 @@ b_decay = false;
 
 b_changeday= false;
 i_changedaytimer = 0;
+i_fade = 1;
+
+global.music_emitter = audio_emitter_create();
+global.background_emitter = audio_emitter_create();

@@ -25,14 +25,23 @@ if (!global.b_dayactive)
 {
 	b_changeday = true;
 	i_changedaytimer = 0;
+	i_fade-= 0.01;
+	audio_emitter_gain(global.music_emitter, i_fade);
+	audio_emitter_gain(global.background_emitter, i_fade);
+	
 }
 if (global.b_dayactive && b_changeday)
 {
+	stop_sounds();
 	i_changedaytimer++;
+	i_fade = 1;
+	audio_emitter_gain(global.music_emitter, i_fade);
+	audio_emitter_gain(global.background_emitter, i_fade);
 	if (i_changedaytimer == 1)
 	{
+		choose_backtrack();
 		b_changeday = false;
-		audio_play_sound(snd_room_tone, 10, false);
+		//audio_play_sound_on(global.music_emitter, snd_stresstest, true, 0);
 	}
 }
 
