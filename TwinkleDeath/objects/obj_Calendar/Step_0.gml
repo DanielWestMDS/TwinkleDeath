@@ -136,18 +136,12 @@ show_debug_message("Day:" + s_month_num);
 b_changeday = false; //ensures loop once
 }
 
-//Changing Sprite (4 sprites)
-if (global.i_chats_read != i_difference)
+//Changing Sprite (2 sprites)
+if (e_time_of_day == E_TIMEOFDAY.MORNING || e_time_of_day == E_TIMEOFDAY.AFTERNOON)
 {
-	image_index =  image_index - 1;
-	i_difference -= 1;
-	if (image_index == 3)
-	{
-		image_index = 2;
-	}
+	image_index = 1;
 }
-if (global.i_chats_read == global.i_chats_to_read)
+else
 {
-	image_index = 3;
+	image_index = 0;
 }
-
