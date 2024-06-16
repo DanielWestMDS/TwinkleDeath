@@ -9,8 +9,8 @@
   "name":"obj_dialogue_chris_two",
   "overriddenProperties":[],
   "parent":{
-    "name":"responses",
-    "path":"folders/Objects/Phone/Chats/responses.yy",
+    "name":"day2",
+    "path":"folders/Objects/Phone/Chats/day2.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_button_parent",

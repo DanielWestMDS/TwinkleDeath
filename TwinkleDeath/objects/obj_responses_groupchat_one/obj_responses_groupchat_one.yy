@@ -10,8 +10,8 @@
   "name":"obj_responses_groupchat_one",
   "overriddenProperties":[],
   "parent":{
-    "name":"responses",
-    "path":"folders/Objects/Phone/Chats/responses.yy",
+    "name":"day1",
+    "path":"folders/Objects/Phone/Chats/day1.yy",
   },
   "parentObjectId":{
     "name":"obj_response_parent",

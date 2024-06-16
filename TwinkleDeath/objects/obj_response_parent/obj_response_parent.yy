@@ -9,8 +9,8 @@
   "name":"obj_response_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"responses",
-    "path":"folders/Objects/Phone/Chats/responses.yy",
+    "name":"other",
+    "path":"folders/Objects/Phone/Chats/other.yy",
   },
   "parentObjectId":null,
   "persistent":false,

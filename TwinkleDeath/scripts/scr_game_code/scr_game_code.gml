@@ -4,7 +4,7 @@
 function update_days(_gameday, _worldday)
 {
 //Updates days based on inputs.
-gameday = _gameday + 2;
+gameday = _gameday + 3;
 global.i_gameday = gameday;
 worldday = 1;
 switch (gameday)

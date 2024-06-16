@@ -22,6 +22,7 @@ if mouse_check_button_pressed(mb_left)
 					instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
 				}//instance_destroy(self);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+			break;
 			
 			case (2):
 				// need code for checking game time
@@ -29,6 +30,11 @@ if mouse_check_button_pressed(mb_left)
 				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
 				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_chris);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+			break;
+			
+			case (3):
+				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
 			}
 		}
 	}
