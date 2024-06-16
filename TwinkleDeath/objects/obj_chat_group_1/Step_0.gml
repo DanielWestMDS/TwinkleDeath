@@ -7,7 +7,7 @@ if mouse_check_button_pressed(mb_left)
 	//Arguments are (x, y, obj, prec, notme)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
-		if (!global.b_selecting_message && !global.b_laurie_read && !b_waiting)
+		if (!global.b_selecting_message && !global.b_group_read && !b_waiting)
 		{
 			// keeping this for later (not necessary)
 			if (current_messages_sent == 1000)
@@ -29,8 +29,11 @@ if mouse_check_button_pressed(mb_left)
 			}
 			else
 			{
-				global.i_response_distance = 110;
-				y -= 110;
+				if (global.i_current_responses > 0)
+				{
+					global.i_response_distance = 120;
+				}
+				y -= 120;
 				current_messages_sent++;
 			}
 		}
@@ -49,11 +52,11 @@ if (global.b_group_read == false)
 				selectbutton(0, true);
 			break;
 			
-			case (13):
+			case (14):
 				selectbutton(1, false);
 			break;
 			
-			case (14):
+			case (15):
 				global.b_group_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;
