@@ -214,6 +214,7 @@ function move_with_cam(_Object, _min, _max)
 		_Object.x += move;
 		obj_Quagsire.x += move;
 		obj_Blinds.x += move;
+		obj_journal.x += move;
 	}
 	//fix bounding issues
 	boundhigh = _Object.x - _min;
@@ -223,12 +224,14 @@ function move_with_cam(_Object, _min, _max)
 		_Object.x += boundlow - 0.1;
 		obj_Quagsire.x += boundlow - 0.1;
 		obj_Blinds.x += boundlow - 0.1;
+		obj_journal.x += boundlow - 0.1;
 	}
 	if (boundhigh < 0)
 	{
 		_Object.x -= boundhigh - 0.1;
 		obj_Quagsire.x -= boundhigh - 0.1;
 		obj_Blinds.x -= boundhigh - 0.1;
+		obj_journal.x -= boundhigh - 0.1;
 	}
 
 }
@@ -243,7 +246,14 @@ function setjournal(_transparency)
 	{
 		//BedLamp
 		image_index = 1;
-		obj_journal.x = obj_Room.x - 800;
-		obj_journal.y = 150;
+		obj_journal.x = obj_Room.x + 3120;
+		obj_journal.y = 925;
+	}
+	else
+	{
+		//Assuming Night as Default
+		image_index = 1;
+		obj_journal.x = obj_Room.x + 3120;
+		obj_journal.y = 925;
 	}
 }

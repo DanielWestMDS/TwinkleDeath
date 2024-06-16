@@ -20,6 +20,24 @@ if (fcooldowntimer <= fcooldown)
 
 
 
+//NEW DAY SOUND UPDATES
+if (!global.b_dayactive)
+{
+	b_changeday = true;
+	i_changedaytimer = 0;
+}
+if (global.b_dayactive && b_changeday)
+{
+	i_changedaytimer++;
+	if (i_changedaytimer == 1)
+	{
+		b_changeday = false;
+		audio_play_sound(snd_room_tone, 10, false);
+	}
+}
+
+
+
 if (keyboard_check_pressed(ord("Q")))
 {
 	add_stressful_event(14);

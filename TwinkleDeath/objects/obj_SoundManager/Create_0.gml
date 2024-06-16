@@ -5,3 +5,6 @@ global.f_stressrate = 0.0;
 fcooldown = 0;
 fcooldowntimer = 60;
 b_decay = false;
+
+b_changeday= false;
+i_changedaytimer = 0;
