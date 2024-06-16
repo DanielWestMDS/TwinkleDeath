@@ -41,6 +41,7 @@ global.b_burner2_read = false;
 global.b_adam_read = false;
 
 global.b_group_paused = false;
+global.b_justin_paused = false;
 
 // for moving scott messages
 global.i_response_distance = 0;

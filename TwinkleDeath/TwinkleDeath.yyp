@@ -74,6 +74,7 @@
     {"id":{"name":"obj_chat_laurie_4","path":"objects/obj_chat_laurie_4/obj_chat_laurie_4.yy",},},
     {"id":{"name":"obj_chat_message_chris","path":"objects/obj_chat_message_chris/obj_chat_message_chris.yy",},},
     {"id":{"name":"obj_chat_message_group","path":"objects/obj_chat_message_group/obj_chat_message_group.yy",},},
+    {"id":{"name":"obj_chat_message_justin","path":"objects/obj_chat_message_justin/obj_chat_message_justin.yy",},},
     {"id":{"name":"obj_chat_message_laurie","path":"objects/obj_chat_message_laurie/obj_chat_message_laurie.yy",},},
     {"id":{"name":"obj_chat_parent","path":"objects/obj_chat_parent/obj_chat_parent.yy",},},
     {"id":{"name":"obj_dialogue_chris_two","path":"objects/obj_dialogue_chris_two/obj_dialogue_chris_two.yy",},},

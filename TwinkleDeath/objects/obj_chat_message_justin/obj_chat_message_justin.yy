@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_chat_justin_4",
+  "%Name":"obj_chat_message_justin",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_chat_justin_4",
+  "name":"obj_chat_message_justin",
   "overriddenProperties":[],
   "parent":{
-    "name":"day5",
-    "path":"folders/Objects/Phone/Chats/day5.yy",
+    "name":"other",
+    "path":"folders/Objects/Phone/Chats/other.yy",
   },
   "parentObjectId":{
-    "name":"obj_chat_parent",
-    "path":"objects/obj_chat_parent/obj_chat_parent.yy",
+    "name":"obj_chat_button_parent",
+    "path":"objects/obj_chat_button_parent/obj_chat_button_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_justin",
-    "path":"sprites/spr_chat_justin/spr_chat_justin.yy",
+    "name":"spr_DaysUI",
+    "path":"sprites/spr_DaysUI/spr_DaysUI.yy",
   },
   "spriteMaskId":null,
   "visible":true,

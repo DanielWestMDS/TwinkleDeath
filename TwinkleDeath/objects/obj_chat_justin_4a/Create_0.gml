@@ -20,8 +20,8 @@ b_waiting = false;
 
 b_chat_finished = false;
 
-obj_dialogue = obj_dialogue_laurie_four;
-obj_response = obj_responses_laurie_four;
+obj_dialogue = obj_dialogue_justin_a;
+obj_response = obj_responses_justin_a;
 
 global.i_current_responses = 0;
 

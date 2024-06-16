@@ -38,7 +38,7 @@ if (global.b_laurie_read == false)
 			break;
 			
 			case (5):
-				global.b_laurie_read = true;
+				global.b_justin_read = true;
 				global.i_chats_read++;
 				global.b_selecting_message = false;
 				b_chat_finished = true;
