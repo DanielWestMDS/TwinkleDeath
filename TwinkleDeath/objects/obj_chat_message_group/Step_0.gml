@@ -49,6 +49,17 @@ if mouse_check_button_pressed(mb_left)
 			case (5):
 				instance_create_layer(1025, 1260, "Chat", obj_chat_group_4);
 			break;
+			
+			case(6):
+			if (!global.b_group_paused)
+			{
+				instance_create_layer(1025, 1160, "Chat", obj_chat_group_5);
+			}
+			else
+			{
+				instance_create_layer(1025, 1160, "Chat", obj_chat_group_5b);
+			}
+			break;
 		}
 		instance_destroy(self);
     }
