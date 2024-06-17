@@ -47,10 +47,34 @@ if (global.b_dayactive && b_changeday)
 
 
 
-if (keyboard_check_pressed(ord("Q")))
+// HEARTBEAT //
+i_pulse = f_stress;
+
+//Pulse upper limi
+if (i_pulse >= 100)
 {
-	add_stressful_event(14);
+	i_pulse = 100;
 }
+if (i_pulse <= 40)
+{
+	i_gain = 0;
+}
+else
+{
+	i_gain = (i_pulse - 40)/100;
+}
+audio_emitter_gain(global.heartbeat_emitter, i_gain);
+
+
+i_timetillbeat++
+if (i_timetillbeat >= (140 - i_pulse))
+{
+	audio_play_sound_on(global.heartbeat_emitter, snd_heartbeat, false,0);
+	i_timetillbeat = 0;
+}
+show_debug_message(string(i_pulse));
+
+
 if (keyboard_check_pressed(ord("W")))
 {
 	add_stressful_event(10);
@@ -61,5 +85,5 @@ if (keyboard_check_pressed(ord("E")))
 }
 if (keyboard_check_pressed(ord("R")))
 {
-	set_stress_rate(E_STRESS_LEVEL.MEDIUM_STRESS);
+	set_stress_rate(E_STRESS_LEVEL.MILD_PANIC);
 }
