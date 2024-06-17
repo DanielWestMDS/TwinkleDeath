@@ -10,12 +10,12 @@ if mouse_check_button_pressed(mb_left)
 		if (!global.b_selecting_message && !global.b_trip_read && !b_waiting)
 		{
 
-			if (global.i_current_responses > 0)
-			{
-				global.i_response_distance = 120;
-			}
-			y -= 120;
-			current_messages_sent++;
+				if (global.i_current_responses > 0)
+				{
+					global.i_response_distance = 123;
+				}
+				y -= 123;
+				current_messages_sent++;
 		}
 		current_y = y;
     }
@@ -28,11 +28,15 @@ if (global.b_trip_read == false)
 	// dialogue option at certain message
 		switch (current_messages_sent)
 		{
-			case (0):
+			case (2):
 				selectbutton(0, false);
 			break;
 			
-			case (4):
+			case (8):
+				selectbutton(1, true);
+			break;
+			
+			case (11):
 			if (!b_chat_finished)
 			{
 				global.b_group_read = true;

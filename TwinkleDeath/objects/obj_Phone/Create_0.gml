@@ -39,6 +39,7 @@ global.b_leo_read = false;
 global.b_justin_read = false;
 global.b_burner2_read = false;
 global.b_adam_read = false;
+global.b_trip_read = false;
 
 global.b_group_paused = false;
 global.b_justin_paused = false;

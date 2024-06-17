@@ -74,6 +74,10 @@ if mouse_check_button_pressed(mb_left)
 			{
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_7a);
 			}
+			
+			case(10):
+				instance_create_layer(1025, 1160, "Chat", obj_chat_group_9);
+			break;
 		}
 		instance_destroy(self);
     }
