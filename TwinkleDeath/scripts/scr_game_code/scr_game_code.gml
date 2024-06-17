@@ -238,7 +238,7 @@ function move_with_cam(_Object, _min, _max)
 
 function setjournal(_transparency)
 {
-	//still fixing
+	//should work
 	obj_journal.image_alpha = _transparency;
 	
 	//Set Position based on day
