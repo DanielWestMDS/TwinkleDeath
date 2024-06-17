@@ -93,6 +93,7 @@
     {"id":{"name":"obj_chat_message_group","path":"objects/obj_chat_message_group/obj_chat_message_group.yy",},},
     {"id":{"name":"obj_chat_message_justin","path":"objects/obj_chat_message_justin/obj_chat_message_justin.yy",},},
     {"id":{"name":"obj_chat_message_laurie","path":"objects/obj_chat_message_laurie/obj_chat_message_laurie.yy",},},
+    {"id":{"name":"obj_chat_message_trip","path":"objects/obj_chat_message_trip/obj_chat_message_trip.yy",},},
     {"id":{"name":"obj_chat_parent","path":"objects/obj_chat_parent/obj_chat_parent.yy",},},
     {"id":{"name":"obj_chat_trip","path":"objects/obj_chat_trip/obj_chat_trip.yy",},},
     {"id":{"name":"obj_dialogue_burner_1","path":"objects/obj_dialogue_burner_1/obj_dialogue_burner_1.yy",},},

@@ -33,7 +33,10 @@ if mouse_check_button_pressed(mb_left)
 				instance_create_layer(room_width / 2, 1250, "Chat", obj_chat_burner_1a);
 			}
 			break;
-		
+			
+			case(8):
+				instance_create_layer(room_width / 2, 1250, "Chat", obj_chat_burner2);
+			break;
 		}
 		instance_destroy(self);
     }

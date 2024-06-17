@@ -12,9 +12,9 @@ if mouse_check_button_pressed(mb_left)
 
 				if (global.i_current_responses > 0)
 				{
-					global.i_response_distance = 120;
+					global.i_response_distance = 125;
 				}
-				y -= 120;
+				y -= 125;
 				current_messages_sent++;
 		}
 		current_y = y;
@@ -28,23 +28,11 @@ if (global.b_group_read == false)
 	// dialogue option at certain message
 		switch (current_messages_sent)
 		{
-			case (2):
+			case (3):
 				selectbutton(0, true);
 			break;
 			
-			case (5):
-				selectbutton(1, false);
-			break;
-			
-			case (7):
-				selectbutton(2, false);
-			break;
-			
-			case (12):
-				selectbutton(3, true);
-			break;
-			
-			case (13):
+			case (10):
 			if (!b_chat_finished)
 			{
 				global.b_group_read = true;

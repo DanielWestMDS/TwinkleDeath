@@ -20,8 +20,8 @@ b_waiting = false;
 
 b_chat_finished = false;
 
-obj_dialogue = obj_dialogue_burner_1a;
-obj_response = obj_responses_burner_1a;
+obj_dialogue = obj_dialogue_burner2;
+obj_response = obj_responses_burner2;
 
 global.i_current_responses = 0;
 

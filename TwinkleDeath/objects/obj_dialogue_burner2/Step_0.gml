@@ -12,7 +12,7 @@ if mouse_check_button_pressed(mb_left)
 
 		// may need to make other dialogue options for multiple selections
 		
-		if (image_index == 4)
+		if (image_index == 3)
 		{
 			global.i_selected_message = 2;
 		}

@@ -10,8 +10,8 @@ if mouse_check_button_pressed(mb_left)
 		// do not iterate messages if sending dialogue or chat is finished
 		if (!global.b_selecting_message && !global.b_chris_read && !b_waiting && !b_chat_finished)
 		{
-			global.i_response_distance = 230;
-			y -= 230;
+			global.i_response_distance = 130;
+			y -= 130;
 			current_messages_sent++;
 			current_y = y;
 		}
@@ -34,11 +34,11 @@ if (global.b_chris_read == false)
 				selectbutton(1, false);
 			break;
 			
-			case (4):
+			case (5):
 				selectbutton(2, true);
 			break;
 			
-			case (6):
+			case (7):
 				global.b_chris_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;

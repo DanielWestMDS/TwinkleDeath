@@ -21,7 +21,7 @@ if mouse_check_button_pressed(mb_left)
     }
 }
 
-if (global.b_laurie_read == false)
+if (global.b_burner_read == false)
 {
 	//if (global.i_selected_message == 0 && !global.b_selecting_message)
 	//{
@@ -32,16 +32,12 @@ if (global.b_laurie_read == false)
 				selectbutton(0, false);
 			break;
 			
-			case (9):
+			case (11):
 				selectbutton(1, false);
 			break;
 			
-			case (14):
-				selectbutton(2, true);
-			break;
-			
 			case (18):
-				selectbutton(3, true);
+				selectbutton(2, true);
 			break;
 			
 			case (22):

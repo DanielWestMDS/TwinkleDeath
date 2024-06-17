@@ -65,6 +65,15 @@ if mouse_check_button_pressed(mb_left)
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_6);
 			break;
 			
+			case(8):
+			if (global.e_time_of_day == 0)
+			{
+				instance_create_layer(1025, 1160, "Chat", obj_chat_group_7);
+			}
+			else
+			{
+				instance_create_layer(1025, 1160, "Chat", obj_chat_group_7a);
+			}
 		}
 		instance_destroy(self);
     }

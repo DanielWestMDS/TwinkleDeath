@@ -12,21 +12,10 @@ if mouse_check_button_pressed(mb_left)
 		// change to chat object
 		switch(global.i_gameday)
 		{
-			case(1):
-				// day 0 group chat
-				instance_create_layer(room_width / 2, 1200, "Chat", obj_chat_laurie_0);
-			break;
-			
-			case(2):
-			// day 1 group chat
-				instance_create_layer(room_width / 2, 1050, "Chat", obj_chat_chris_1);
-			break;
-			
 			case(8):
-			// day 2 group chat
-				instance_create_layer(room_width / 2, 1050, "Chat", obj_chat_chris_2);
+				instance_create_layer(1025, 1160, "Chat", obj_chat_trip);
 			break;
-		
+			
 		}
 		instance_destroy(self);
     }
@@ -41,7 +30,7 @@ if (!global.b_phoneactive)
 else
 {
 	x = room_width / 2;
-	y = (room_height / 2) + 200;
+	y = (room_height / 2) - 200;
 }
 
 if (global.tab_open != 1)
@@ -49,7 +38,4 @@ if (global.tab_open != 1)
 	instance_destroy();	
 }
 
-// Inherit the parent event
 event_inherited();
-
-

@@ -20,8 +20,8 @@ b_waiting = false;
 
 b_chat_finished = false;
 
-obj_dialogue = obj_dialogue_groupchat_seven;
-obj_response = obj_responses_groupchat_seven;
+obj_dialogue = obj_dialogue_group_7;
+obj_response = obj_responses_group_7;
 
 global.i_current_responses = 0;
 

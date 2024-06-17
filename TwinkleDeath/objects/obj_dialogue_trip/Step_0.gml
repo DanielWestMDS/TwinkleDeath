@@ -12,14 +12,8 @@ if mouse_check_button_pressed(mb_left)
 
 		// may need to make other dialogue options for multiple selections
 		
-		if (image_index == 4)
-		{
-			global.i_selected_message = 2;
-		}
-		else
-		{
-			global.i_selected_message = 1;
-		}
+		global.i_selected_message = 1;
+		
 		global.i_current_responses++;
 		// perhaps check if other dialogue options exist and destroy those here
 		instance_destroy(self);
