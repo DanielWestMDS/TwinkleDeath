@@ -38,5 +38,5 @@
     "path":"sprites/spr_chat_button_group/spr_chat_button_group.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

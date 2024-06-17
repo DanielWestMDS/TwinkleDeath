@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialogue_option",
-    "path":"sprites/spr_dialogue_option/spr_dialogue_option.yy",
+    "name":"spr_feed0",
+    "path":"sprites/spr_feed0/spr_feed0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

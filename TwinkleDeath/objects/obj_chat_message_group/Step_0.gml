@@ -76,7 +76,14 @@ if mouse_check_button_pressed(mb_left)
 			}
 			
 			case(10):
+			if (global.b_group_paused && global.i_chats_read >= 3)
+			{
+				instance_create_layer(1025, 1160, "Chat", obj_chat_group_9b);
+			}
+			else
+			{
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_9);
+			}
 			break;
 		}
 		instance_destroy(self);

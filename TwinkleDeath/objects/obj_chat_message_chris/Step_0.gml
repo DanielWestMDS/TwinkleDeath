@@ -30,6 +30,11 @@ if mouse_check_button_pressed(mb_left)
 			case(9):
 				instance_create_layer(room_width / 2, 1050, "Chat", obj_chat_chris_3);
 			break;
+			
+			case (10):
+			{
+				instance_create_layer(room_width / 2, 1050, "Chat", obj_chat_chris_10);
+			}
 		
 		}
 		instance_destroy(self);

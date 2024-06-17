@@ -56,7 +56,7 @@ if (global.b_group_read == false)
 				selectbutton(1, false);
 			break;
 			
-			case (19):
+			case (11):
 			if (!b_chat_finished)
 			{
 				global.b_group_read = true;

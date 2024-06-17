@@ -7,7 +7,7 @@ if mouse_check_button_pressed(mb_left)
 	//Arguments are (x, y, obj, prec, notme)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
-		if (!global.b_selecting_message && !global.b_group_read && !b_waiting)
+		if (!global.b_selecting_message && !global.b_group_read && !global.b_group_paused)
 		{
 
 				if (global.i_current_responses > 0)
@@ -41,12 +41,7 @@ if (global.b_trip_read == false)
 			break;
 			
 			case (20):
-			if (!b_chat_finished)
-			{
-				global.b_group_read = true;
-				global.i_chats_read++;
-				b_chat_finished = true;
-			}
+				global.b_group_paused = true;
 			break;
 		}
 	//}

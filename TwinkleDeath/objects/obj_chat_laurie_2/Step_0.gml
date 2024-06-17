@@ -31,13 +31,6 @@ if (global.b_laurie_read == false)
 			break;
 			
 			case (2):
-			if (!global.b_selecting_message)
-			{
-				global.i_response_distance = 230;
-				y -= 230;
-				current_messages_sent++;
-				current_y = y;
-			}
 				selectbutton(1, false);
 			break;
 			

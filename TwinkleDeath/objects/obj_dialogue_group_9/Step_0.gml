@@ -11,7 +11,7 @@ if mouse_check_button_pressed(mb_left)
 		//url_open("https://www.victimsupport.org.nz/crimes-and-traumatic-events/stalking-harassment");
 
 		// may need to make other dialogue options for multiple selections
-		if (image_index == 1 || image_index == 3)
+		if (image_index == 1)
 		{
 			global.i_selected_message = 2;
 		}
