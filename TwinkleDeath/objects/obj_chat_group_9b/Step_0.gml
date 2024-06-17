@@ -32,6 +32,15 @@ if (global.b_group_read == false)
 				selectbutton(0, false);
 			break;
 			
+			case(4):
+			if (!b_hyperlink_made)
+			{
+				instance_create_layer(1050, 1480, "Chat", obj_hyperlink);
+				b_hyperlink_made = true;
+				global.i_current_responses++;
+			}
+			break;
+			
 			case (11):
 				selectbutton(1, true);
 			break;
@@ -41,11 +50,11 @@ if (global.b_group_read == false)
 			break;
 			
 			case (19):
-				selectbutton(2, false);
+				selectbutton(3, false);
 			break;
 			
 			case (22):
-				selectbutton(1, true);
+				selectbutton(4, true);
 			break;
 			
 			case (27):

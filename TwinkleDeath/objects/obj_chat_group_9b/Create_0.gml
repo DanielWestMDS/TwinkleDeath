@@ -23,6 +23,8 @@ b_chat_finished = false;
 obj_dialogue = obj_dialogue_group_9b;
 obj_response = obj_responses_group_9b;
 
+b_hyperlink_made = false;
+
 global.i_current_responses = 0;
 
 current_y = y;

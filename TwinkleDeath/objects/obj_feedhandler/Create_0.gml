@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-mscale = 3
-blength = 256 * mscale
+mscale = 1
+blength = 1000 * mscale
 curblock = 0
 prevblock = -1
 feedopen = false

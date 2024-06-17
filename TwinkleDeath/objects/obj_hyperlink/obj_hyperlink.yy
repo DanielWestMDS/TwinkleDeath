@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_feedtext",
+  "%Name":"obj_hyperlink",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_feedtext",
+  "name":"obj_hyperlink",
   "overriddenProperties":[],
   "parent":{
-    "name":"Feed",
-    "path":"folders/Objects/Phone/Feed.yy",
+    "name":"day10",
+    "path":"folders/Objects/Phone/Chats/day10.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_response_parent",
+    "path":"objects/obj_response_parent/obj_response_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_feedtext",
-    "path":"sprites/spr_feedtext/spr_feedtext.yy",
+    "name":"spr_chris_response_10",
+    "path":"sprites/spr_chris_response_10/spr_chris_response_10.yy",
   },
   "spriteMaskId":null,
   "visible":false,

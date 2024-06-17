@@ -146,6 +146,7 @@
     {"id":{"name":"obj_feedpfp","path":"objects/obj_feedpfp/obj_feedpfp.yy",},},
     {"id":{"name":"obj_feedSource","path":"objects/obj_feedSource/obj_feedSource.yy",},},
     {"id":{"name":"obj_feedtext","path":"objects/obj_feedtext/obj_feedtext.yy",},},
+    {"id":{"name":"obj_hyperlink","path":"objects/obj_hyperlink/obj_hyperlink.yy",},},
     {"id":{"name":"obj_journal","path":"objects/obj_journal/obj_journal.yy",},},
     {"id":{"name":"obj_justin_screenshot","path":"objects/obj_justin_screenshot/obj_justin_screenshot.yy",},},
     {"id":{"name":"obj_lower_phone","path":"objects/obj_lower_phone/obj_lower_phone.yy",},},
