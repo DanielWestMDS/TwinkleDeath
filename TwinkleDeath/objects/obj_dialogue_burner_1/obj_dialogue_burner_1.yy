@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_burner_response_6",
-    "path":"sprites/spr_burner_response_6/spr_burner_response_6.yy",
+    "name":"spr_burner_response_6a",
+    "path":"sprites/spr_burner_response_6a/spr_burner_response_6a.yy",
   },
   "spriteMaskId":null,
   "visible":true,

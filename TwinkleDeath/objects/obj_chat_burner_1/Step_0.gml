@@ -35,14 +35,22 @@ if (global.b_laurie_read == false)
 		switch (current_messages_sent)
 		{
 			case (1):
-				selectbutton(0, true);
+				selectbutton(0, false);
 			break;
 			
-			case (4):
+			case (6):
 				selectbutton(1, false);
 			break;
 			
-			case (7):
+			case (8):
+				selectbutton(2, false);
+			break;
+			
+			case (10):
+				selectbutton(3, true);
+			break;
+			
+			case (12):
 				global.b_burner_read = true;
 				global.i_chats_read++;
 				global.b_selecting_message = false;
