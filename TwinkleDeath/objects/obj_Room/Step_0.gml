@@ -18,7 +18,7 @@ if (global.i_gameday != 60)
 		update_days(global.i_gameday, global.i_worldday);
 		show_debug_message(string(global.i_gameday) + " scene, " + string(global.i_worldday) + " day");
 		//New Day Setup
-		if ((global.i_gameday == 1) ||(global.i_gameday == 60))
+		if ((global.i_gameday == 1) ||(global.i_gameday == 21))
 		{
 			//Phone up on day 1 to begin with
 			global.b_phoneactive = true;
