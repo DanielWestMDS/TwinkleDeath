@@ -45,6 +45,5 @@ if (global.i_chats_read == global.i_chats_to_read)
 }
 else
 {
-	setjournal(0.1);
-	
+	setjournal(0.4);
 }
