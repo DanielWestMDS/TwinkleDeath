@@ -33,23 +33,23 @@ function set_stress_rate(_stress_enum)
 {
 	if (_stress_enum = E_STRESS_LEVEL.LOW_STRESS)
 	{
-		global.f_stressrate = -1;
+		global.f_stressrate = -2;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.SLIGHT_STRESS)
 	{
-		global.f_stressrate = 0.2;
+		global.f_stressrate = 0.8;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.MEDIUM_STRESS)
 	{
-		global.f_stressrate = 0.4;
+		global.f_stressrate = 1.5;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.HIGH_STRESS)
 	{
-		global.f_stressrate = 1;
+		global.f_stressrate = 3;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.MILD_PANIC)
 	{
-		global.f_stressrate = 2;
+		global.f_stressrate = 5;
 	}
 }
 
@@ -70,7 +70,7 @@ function process_stress(_stress,_decay)
 	currentstress = global.f_stressrate + addingstress;
 	if (_decay)
 	{
-		global.f_addingstress -= addingstress;
+		global.f_addingstress /= 2;
 		if (global.f_addingstress <= 2)
 		{
 			global.f_addingstress = 0;
