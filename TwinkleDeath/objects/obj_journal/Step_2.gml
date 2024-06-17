@@ -3,7 +3,7 @@
 
 if (global.i_chats_read == global.i_chats_to_read)
 {
-	image_index = 1;
+	setjournal(0.8);
 	
 	if mouse_check_button_pressed(mb_left) 
 	{
@@ -21,19 +21,29 @@ if (global.i_chats_read == global.i_chats_to_read)
 				// global bools for each chat
 				global.b_group_read = false;
 				global.b_laurie_read = false;
-				global.b_chris_read = false;
+				global.b_crispin_read = false;
 				global.b_burner_read = false;
 				global.b_leo_read = false;
 				global.b_justin_read = false;
 				global.b_burner2_read = false;
 				global.b_adam_read = false;
-				
-				global.b_group_paused = false;
 			}
 	    }
+	}
+	
+	if position_meeting(mouse_x, mouse_y, id) 
+	{ 
+		if collision_point(mouse_x, mouse_y, id, true, false) 
+		{ 
+			image_index = 2;
+		}
+		else
+		{
+			image_index = 1;
+		}
 	}
 }
 else
 {
-	image_index = 0;
+	setjournal(0.1);
 }

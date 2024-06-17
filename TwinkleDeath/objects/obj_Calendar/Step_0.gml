@@ -15,6 +15,9 @@ switch (global.i_gameday)
 		e_weekday = E_WEEKDAY.SUNDAY;
 		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
 		break;
+		
+		//day 2
+		
 	case 2: //Feburary 16th, First Day
 		e_month = E_MONTH.FEBRUARY;
 		e_month_num = 16;
@@ -27,102 +30,145 @@ switch (global.i_gameday)
 		e_weekday = E_WEEKDAY.MONDAY;
 		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
 		break;
+		
+		//Day 3
+
 	case 4: //Feburary 19th, afternoon
 		e_month = E_MONTH.FEBRUARY;
 		e_month_num = 19;
 		e_weekday = E_WEEKDAY.THURSDAY;
-		global.e_time_of_day = E_TIMEOFDAY.AFTERNOON;	
+		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
 		break;
-	case 5: //Feburary 21st, afternoon
+	case 5: //Feburary 19th, afternoon
 		e_month = E_MONTH.FEBRUARY;
 		e_month_num = 21;
 		e_weekday = E_WEEKDAY.SATURDAY;
-		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
+		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
 		break;
+		
+		//Day 4
+		
 	case 6: //Feburary 25th, afternoon
 		e_month = E_MONTH.FEBRUARY;
 		e_month_num = 25;
 		e_weekday = E_WEEKDAY.WEDNESDAY;
 		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
 		break;
-	case 7: //Feburary 27th, afternoon
-		e_month = E_MONTH.FEBRUARY;
-		e_month_num = 27;
-		e_weekday = E_WEEKDAY.FRIDAY;
-		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
-		break;
-	case 8: //New Month!
-		e_month = E_MONTH.MARCH;
-		e_month_num = 1;
-		e_weekday = E_WEEKDAY.SUNDAY;
-		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
-		break;
-	case 9: //Tueday, idle day
-		e_month = E_MONTH.MARCH;
-		e_month_num = 3;
-		e_weekday = E_WEEKDAY.TUESDAY;
-		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
-		break;
-	case 10: //Tueday, first week skip
-		e_month = E_MONTH.MARCH;
-		e_month_num = 10;
-		e_weekday = E_WEEKDAY.TUESDAY;
-		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
-		break;
-	case 11: //Scott Block Week
+		
+		//Day 5
+		
+	case 7: 
 		e_month = E_MONTH.MARCH;
 		e_month_num = 14;
-		e_weekday = E_WEEKDAY.SATURDAY;
-		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
-		break;
-	case 12: //LAURIE BURNER DAY AFTER
-		e_month = E_MONTH.MARCH;
-		e_month_num = 15;
-		e_weekday = E_WEEKDAY.SATURDAY;
-		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
-		break;
-	case 13: //Timeskipscottreachesout
-		e_month = E_MONTH.MARCH;
-		e_month_num = 28;
 		e_weekday = E_WEEKDAY.FRIDAY;
-		global.e_time_of_day = E_TIMEOFDAY.AFTERNOON;	
+		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
 		break;
-	case 14: //more comig into group, x reaches out about secret
+		
+		//Day 6
+		
+	case 8: //New Month!
 		e_month = E_MONTH.APRIL;
-		e_month_num = 8;
-		e_weekday = E_WEEKDAY.TUESDAY;
-		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
-		break;
-	case 15: //day Crispin figures out
-		e_month = E_MONTH.APRIL;
-		e_month_num = 21;
+		e_month_num = 7;
 		e_weekday = E_WEEKDAY.MONDAY;
 		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
 		break;
-	case 16: //day Crispin figures out
+	case 9: //Tueday, idle day
 		e_month = E_MONTH.APRIL;
-		e_month_num = 24;
-		e_weekday = E_WEEKDAY.THURSDAY;
+		e_month_num = 7;
+		e_weekday = E_WEEKDAY.TUESDAY;
+		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
+		break;
+		
+		//Day 7
+	
+	case 10: //Tueday, first week skip
+		e_month = E_MONTH.APRIL;
+		e_month_num = 23;
+		e_weekday = E_WEEKDAY.WEDNESDAY;
 		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
 		break;
-	case 17: //day 17 - 23 DAY SKIP
-		e_month = E_MONTH.MAY;
-		e_month_num = 14;
-		e_weekday = E_WEEKDAY.WEDNESDAY; //23 / 30 / 7 / 14
-		global.e_time_of_day = E_TIMEOFDAY.MORNING; // 2 / 9 / 16 / 23	
+	case 11: //Scott Block Week
+		e_month = E_MONTH.APRIL;
+		e_month_num = 23;
+		e_weekday = E_WEEKDAY.SATURDAY;
+		global.e_time_of_day = E_TIMEOFDAY.EVENING;	
 		break;
-	case 18: //day 19. Currently a 57 day skip, fuck
+		
+		//Day 8
+		
+	case 12: //LAURIE BURNER DAY AFTER
 		e_month = E_MONTH.MAY;
-		e_month_num = 14;
-		e_weekday = E_WEEKDAY.WEDNESDAY; 
-		global.e_time_of_day = E_TIMEOFDAY.MORNING;
-		break;
-	case 19: //day 20
-		e_month = E_MONTH.JUNE;
-		e_month_num = 21;
+		e_month_num = 12;
 		e_weekday = E_WEEKDAY.SATURDAY;
 		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
 		break;
+	case 13: 
+		e_month = E_MONTH.MAY;
+		e_month_num = 12;
+		e_weekday = E_WEEKDAY.SATURDAY;
+		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
+		break;
+		
+		//Day 9
+		
+	case 14:
+		e_month = E_MONTH.MAY;
+		e_month_num = 23;
+		e_weekday = E_WEEKDAY.TUESDAY;
+		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
+		break;
+	case 15: 
+		e_month = E_MONTH.MAY;
+		e_month_num = 23;
+		e_weekday = E_WEEKDAY.TUESDAY;
+		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
+		break;
+		
+		//dAY 10
+		
+	case 16: 
+		e_month = E_MONTH.JUNE;
+		e_month_num = 18;
+		e_weekday = E_WEEKDAY.THURSDAY;
+		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
+		break;
+	case 17: 
+		e_month = E_MONTH.JUNE;
+		e_month_num = 18;
+		e_weekday = E_WEEKDAY.WEDNESDAY;
+		global.e_time_of_day = E_TIMEOFDAY.NIGHT; 
+		break;
+	case 18: //SECOND NIGHT SCENE
+		e_month = E_MONTH.JUNE;
+		e_month_num = 18;
+		e_weekday = E_WEEKDAY.WEDNESDAY; 
+		global.e_time_of_day = E_TIMEOFDAY.NIGHT;
+		break;
+		
+		//Day 11
+	case 19:
+		e_month = E_MONTH.JUNE;
+		e_month_num = 22;
+		e_weekday = E_WEEKDAY.FRIDAY;
+		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
+		break;
+	case 20: 
+		e_month = E_MONTH.JUNE;
+		e_month_num = 22;
+		e_weekday = E_WEEKDAY.SUNDAY;
+		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
+		break;
+	
+		//dAY 12 TECHNICALLY
+		
+	case 21:  //Literally just wake up and leave, no phone
+		e_month = E_MONTH.JUNE;
+		e_month_num = 23;
+		e_weekday = E_WEEKDAY.MONDAY;
+		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
+		break;
+	
+	
 	
 }
 //Setup strings
