@@ -52,7 +52,7 @@ if mouse_check_button_pressed(mb_left)
 			break;
 			
 			case (6):
-				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_justin);
+				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_burner);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 			break;
 			

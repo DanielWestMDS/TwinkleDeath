@@ -10,8 +10,8 @@
   "name":"obj_chat_burner",
   "overriddenProperties":[],
   "parent":{
-    "name":"day5",
-    "path":"folders/Objects/Phone/Chats/day5.yy",
+    "name":"day6",
+    "path":"folders/Objects/Phone/Chats/day6.yy",
   },
   "parentObjectId":{
     "name":"obj_chat_parent",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_laurie_4",
-    "path":"sprites/spr_chat_laurie_4/spr_chat_laurie_4.yy",
+    "name":"spr_chat_burner_5",
+    "path":"sprites/spr_chat_burner_5/spr_chat_burner_5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

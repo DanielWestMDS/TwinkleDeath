@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_laurie_4",
-    "path":"sprites/spr_chat_laurie_4/spr_chat_laurie_4.yy",
+    "name":"spr_chat_burner_5a",
+    "path":"sprites/spr_chat_burner_5a/spr_chat_burner_5a.yy",
   },
   "spriteMaskId":null,
   "visible":true,

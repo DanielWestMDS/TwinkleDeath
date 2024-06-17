@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chat_group_4",
-    "path":"sprites/spr_chat_group_4/spr_chat_group_4.yy",
+    "name":"spr_chat_group_5b",
+    "path":"sprites/spr_chat_group_5b/spr_chat_group_5b.yy",
   },
   "spriteMaskId":null,
   "visible":true,

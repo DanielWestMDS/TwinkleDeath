@@ -51,7 +51,7 @@ if mouse_check_button_pressed(mb_left)
 			break;
 			
 			case(6):
-			if (!global.b_group_paused)
+			if (global.e_time_of_day == 0)
 			{
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_5);
 			}

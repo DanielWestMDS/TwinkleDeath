@@ -10,8 +10,8 @@
   "name":"obj_responses_groupchat_six",
   "overriddenProperties":[],
   "parent":{
-    "name":"day5",
-    "path":"folders/Objects/Phone/Chats/day5.yy",
+    "name":"day6",
+    "path":"folders/Objects/Phone/Chats/day6.yy",
   },
   "parentObjectId":{
     "name":"obj_response_parent",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_group_response_4",
-    "path":"sprites/spr_group_response_4/spr_group_response_4.yy",
+    "name":"spr_group_response_5",
+    "path":"sprites/spr_group_response_5/spr_group_response_5.yy",
   },
   "spriteMaskId":null,
   "visible":true,
