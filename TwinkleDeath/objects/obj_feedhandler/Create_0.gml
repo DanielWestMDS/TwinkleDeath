@@ -8,7 +8,7 @@ prevblock = -1
 feedopen = false
 
 object_set_sprite(obj_feed_parent, postSet);
-	
+
 // creates a post block
 function create_post(pos) {
 	_instle = instance_create_layer(2732/2, ((curblock+pos)*blength) - yPos, layer, obj_feed_parent)
@@ -44,7 +44,7 @@ function create_permpost(pos) {
 	_instle = instance_create_layer(2732/2, ((curblock+pos)*blength) - yPos, layer, obj_feed_parent)
 	_instle.depth = -20
 	_instle.starty = ((curblock+pos)*blength)
-	_instle.image_index = (abs((pos)) % 3)
+	_instle.image_index = (pos)
 	_instle.y = _instle.starty - yPos
 	_instle.image_xscale = mscale;
 	_instle.image_yscale = mscale;

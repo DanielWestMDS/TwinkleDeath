@@ -9,6 +9,51 @@
 	
 	There is a lot of things to make sure things stay on screen properly.
 */
+
+// set feed size
+switch (global.i_gameday)
+{
+	case(1):
+		maxfeedlength = 3;
+	break;
+	
+	case(2):
+		maxfeedlength = 6;
+	break;
+	
+	case(3):
+		maxfeedlength = 3;
+	break;
+	
+	case(4):
+		maxfeedlength = 3;
+	break;
+	
+	case(5):
+		maxfeedlength = 3;
+	break;
+	
+	case(6):
+		maxfeedlength = 3;
+	break;
+	
+	case(7):
+		maxfeedlength = 3;
+	break;
+	
+	case(8):
+		maxfeedlength = 3;
+	break;
+	
+	case(9):
+		maxfeedlength = 3;
+	break;
+	
+	case(10):
+		maxfeedlength = 6;
+	break;
+}
+
 // destroy all posts if a chat is opened
 if (global.tab_open == 0)
 {
