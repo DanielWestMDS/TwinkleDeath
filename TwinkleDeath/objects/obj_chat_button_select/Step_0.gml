@@ -74,7 +74,7 @@ if mouse_check_button_pressed(mb_left)
 			break;
 			
 			case(10):
-				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_burner);
+				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_burner2);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_trip);
 				instance_create_layer(room_width / 2, (room_height / 2) + 2000, "Chat", obj_chat_message_chris);
