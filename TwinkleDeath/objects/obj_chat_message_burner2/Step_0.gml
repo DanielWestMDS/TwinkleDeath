@@ -10,7 +10,7 @@ if (mouse_check_button_pressed(mb_left) && global.b_burner2_read)
 		// chat opened
 		global.b_chat_opened = true;
 		// change to chat object
-		switch(global.i_gameday)
+		switch(global.i_worldday)
 		{	
 			case(8):
 				instance_create_layer(room_width / 2, 1250, "Chat", obj_chat_burner2);

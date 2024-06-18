@@ -21,7 +21,7 @@ if (global.b_dayactive && i_resetroom != 2)
 		b_day = false;
 	}
 	//Set if the blinds start open or closed in the day
-	if (global.i_gameday == 1)
+	if (global.i_gamescene == 1 || global.i_gamescene == 17)
 	{
 		b_startopen = true;
 	}
@@ -73,14 +73,13 @@ if mouse_check_button_pressed(mb_left)
 				image_speed = 1; //Cycle forward to close\
 				i_goalframe = i_closeblinds;
 				image_index = i_openblinds;
-				show_debug_message("Closing");
+
 			}
 			else
 			{
 				image_speed = -1; //Cycle back to open
 				i_goalframe = i_openblinds;
 				image_index = i_closeblinds;
-				show_debug_message("Opening");
 			}
 			b_animating = true;
 		}

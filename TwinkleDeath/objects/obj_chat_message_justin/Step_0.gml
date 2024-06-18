@@ -10,7 +10,7 @@ if (mouse_check_button_pressed(mb_left) && !global.b_justin_read)
 		// chat opened
 		global.b_chat_opened = true;
 		// change to chat object
-		switch(global.i_gameday)
+		switch(global.i_worldday)
 		{
 			
 			case(5):

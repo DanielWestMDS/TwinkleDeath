@@ -24,7 +24,7 @@ else
 }
 
 // set chats for days
-switch(global.i_gameday)
+switch(global.i_worldday)
 {
 	case(1):
 		global.i_chats_to_read = 2;
@@ -53,6 +53,8 @@ switch(global.i_gameday)
 	case(7):
 		global.i_chats_to_read = 2;
 	break;
+	default:
+		global.i_chats_to_read = 0;
 }
 
 if (global.tab_open != 1)

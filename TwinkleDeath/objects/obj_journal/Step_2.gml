@@ -47,6 +47,10 @@ if (global.i_chats_read == global.i_chats_to_read)
 			{
 				image_index = 4;
 			}
+			else if (global.enddaycondition == E_JOURNAL.GOSLACK)
+			{
+				image_index = 10;
+			}
 			else
 			{
 				image_index = 2;
@@ -65,6 +69,10 @@ if (global.i_chats_read == global.i_chats_to_read)
 			else if (global.enddaycondition == E_JOURNAL.GOWORK)
 			{
 				image_index = 3;
+			}
+			else if (global.enddaycondition == E_JOURNAL.GOSLACK)
+			{
+				image_index = 9;
 			}
 			else
 			{

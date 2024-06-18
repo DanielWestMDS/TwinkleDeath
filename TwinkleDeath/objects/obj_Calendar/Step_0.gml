@@ -7,7 +7,7 @@ if (global.b_dayactive && b_changeday)
 {
 	image_index = 0;
 	i_difference = global.i_chats_to_read;
-switch (global.i_gameday)
+switch (global.i_gamescene)
 {
 	case 1: //Feburary 15th, start of semester
 		e_month = E_MONTH.FEBRUARY;
@@ -135,65 +135,35 @@ switch (global.i_gameday)
 		//DAY 10???
 		
 	case 15: 
-		e_month = E_MONTH.MAY;
-		e_month_num = 23;
-		e_weekday = E_WEEKDAY.TUESDAY;
-		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
-		global.enddaycondition = E_JOURNAL.GOSLEEP;
-		break;
-		
-		//dAY 10
-		
-	case 16: 
 		e_month = E_MONTH.JUNE;
-		e_month_num = 18;
-		e_weekday = E_WEEKDAY.THURSDAY;
-		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
-		global.enddaycondition = E_JOURNAL.GOSLEEP;
-		break;
-	case 17: 
-		e_month = E_MONTH.JUNE;
-		e_month_num = 18;
-		e_weekday = E_WEEKDAY.WEDNESDAY;
-		global.e_time_of_day = E_TIMEOFDAY.NIGHT; 
-		global.enddaycondition = E_JOURNAL.GOSLEEP;
-		break;
-	case 18: //SECOND NIGHT SCENE
-		e_month = E_MONTH.JUNE;
-		e_month_num = 18;
-		e_weekday = E_WEEKDAY.WEDNESDAY; 
-		global.e_time_of_day = E_TIMEOFDAY.NIGHT;
-		global.enddaycondition = E_JOURNAL.GOSLEEP;
-		break;
-		
-		//Day 11
-	case 19:
-		e_month = E_MONTH.JUNE;
-		e_month_num = 22;
+		e_month_num = 2;
 		e_weekday = E_WEEKDAY.FRIDAY;
 		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
-		global.enddaycondition = E_JOURNAL.GOSLEEP;
+		global.enddaycondition = E_JOURNAL.GOSLACK;
 		break;
-	case 20: 
+	case 16: 
 		e_month = E_MONTH.JUNE;
-		e_month_num = 22;
-		e_weekday = E_WEEKDAY.SUNDAY;
+		e_month_num = 2;
+		e_weekday = E_WEEKDAY.FRIDAY;
 		global.e_time_of_day = E_TIMEOFDAY.NIGHT;	
 		global.enddaycondition = E_JOURNAL.GOSLEEP;
 		break;
-	
-		//dAY 12 TECHNICALLY
 		
-	case 21:  //Literally just wake up and leave, no phone
+		//Ten should be last Day. Apparently?
+		//Doesn't sit right with me, but honestly solid at this point
+		
+		//Dawests, Case 17 is the next day. There is NO PHONE, just set
+		// chats = 0 and then it should automatically be solid.
+		//I'll try and lock the phone anyhow
+		
+		
+	case 17: 
 		e_month = E_MONTH.JUNE;
-		e_month_num = 23;
-		e_weekday = E_WEEKDAY.MONDAY;
-		global.e_time_of_day = E_TIMEOFDAY.MORNING;	
-		global.enddaycondition = E_JOURNAL.GOSLEEP;
+		e_month_num = 3;
+		e_weekday = E_WEEKDAY.SATURDAY;
+		global.e_time_of_day = E_TIMEOFDAY.MORNING; 
+		global.enddaycondition = E_JOURNAL.GODOOR;
 		break;
-	
-	
-	
 }
 //Setup strings
 s_weekday = set_weekday(e_weekday);

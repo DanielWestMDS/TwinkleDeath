@@ -11,7 +11,7 @@
 */
 
 // set feed size
-switch (global.i_gameday)
+switch (global.i_worldday)
 {
 	case(1):
 		maxfeedlength = 3;
