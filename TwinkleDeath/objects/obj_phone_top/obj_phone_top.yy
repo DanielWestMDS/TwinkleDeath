@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_phone_top",
-    "path":"sprites/spr_phone_top/spr_phone_top.yy",
+    "name":"spr_NewPhone_Top",
+    "path":"sprites/spr_NewPhone_Top/spr_NewPhone_Top.yy",
   },
   "spriteMaskId":null,
   "visible":true,

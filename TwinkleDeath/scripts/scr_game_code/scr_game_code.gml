@@ -4,7 +4,7 @@
 function update_days(_gameday, _worldday)
 {
 //Updates days based on inputs.
-gameday = _gameday + 10;
+gameday = _gameday + 1;
 global.i_gameday = gameday;
 worldday = 1;
 switch (gameday)
@@ -212,7 +212,7 @@ function move_with_cam(_Object, _min, _max)
 	if (obj_Room.x > _min && obj_Room.x < _max) 
 	{
 		_Object.x += move;
-		obj_Quagsire.x += move;
+		//obj_Quagsire.x += move;
 		obj_Blinds.x += move;
 		obj_journal.x += move;
 	}
@@ -222,14 +222,12 @@ function move_with_cam(_Object, _min, _max)
 	if (boundlow < 0)
 	{
 		_Object.x += boundlow - 0.1;
-		obj_Quagsire.x += boundlow - 0.1;
 		obj_Blinds.x += boundlow - 0.1;
 		obj_journal.x += boundlow - 0.1;
 	}
 	if (boundhigh < 0)
 	{
 		_Object.x -= boundhigh - 0.1;
-		obj_Quagsire.x -= boundhigh - 0.1;
 		obj_Blinds.x -= boundhigh - 0.1;
 		obj_journal.x -= boundhigh - 0.1;
 	}
