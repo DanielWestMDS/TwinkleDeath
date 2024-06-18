@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_message_laurie",
-    "path":"sprites/spr_message_laurie/spr_message_laurie.yy",
+    "name":"spr_GroupChatNames",
+    "path":"sprites/spr_GroupChatNames/spr_GroupChatNames.yy",
   },
   "spriteMaskId":null,
   "visible":true,

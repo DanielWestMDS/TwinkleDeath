@@ -25,7 +25,7 @@ if (!global.b_phoneactive)
 else
 {
 	x = 1359;
-	y = 105;
+	y = 55;
 }
 
 

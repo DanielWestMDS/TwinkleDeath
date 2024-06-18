@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_message_group",
-    "path":"sprites/spr_message_group/spr_message_group.yy",
+    "name":"spr_GroupChatNames",
+    "path":"sprites/spr_GroupChatNames/spr_GroupChatNames.yy",
   },
   "spriteMaskId":null,
   "visible":true,

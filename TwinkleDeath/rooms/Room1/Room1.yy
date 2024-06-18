@@ -22,6 +22,7 @@
     {"name":"inst_3EBED59F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_82C3FF7","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1F4A8F90","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_332D81F","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -48,6 +49,7 @@
         {"$GMRInstance":"","%Name":"inst_3EBED59F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3EBED59F","objectId":{"name":"obj_phone_time","path":"objects/obj_phone_time/obj_phone_time.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.4600002,"scaleY":1.4600002,"x":1856.0,"y":64.0,},
         {"$GMRInstance":"","%Name":"inst_82C3FF7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_82C3FF7","objectId":{"name":"obj_phone_cam","path":"objects/obj_phone_cam/obj_phone_cam.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.4600002,"scaleY":1.4600002,"x":1931.5,"y":75.5,},
         {"$GMRInstance":"","%Name":"inst_5E0D7033","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E0D7033","objectId":{"name":"obj_journal","path":"objects/obj_journal/obj_journal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2176.0,"y":864.0,},
+        {"$GMRInstance":"","%Name":"inst_332D81F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_332D81F","objectId":{"name":"obj_phone_bot","path":"objects/obj_phone_bot/obj_phone_bot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.359996,"scaleY":1.359996,"x":1344.0,"y":832.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"RoomLayout","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_C6B1920","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C6B1920","objectId":{"name":"obj_Room","path":"objects/obj_Room/obj_Room.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},

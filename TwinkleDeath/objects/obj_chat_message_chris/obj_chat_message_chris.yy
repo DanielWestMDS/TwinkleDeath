@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_DaysUI",
-    "path":"sprites/spr_DaysUI/spr_DaysUI.yy",
+    "name":"spr_GroupChatNames",
+    "path":"sprites/spr_GroupChatNames/spr_GroupChatNames.yy",
   },
   "spriteMaskId":null,
   "visible":true,
