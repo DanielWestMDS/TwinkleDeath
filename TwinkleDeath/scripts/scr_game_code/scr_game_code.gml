@@ -243,12 +243,26 @@ function setjournal(_transparency)
 	obj_journal.image_alpha = _transparency;
 	
 	//Set Position based on day
-	if (global.i_gameday == 1)
+	if (global.enddaycondition == E_JOURNAL.GODOOR)
 	{
-		//BedLamp
-		image_index = 1;
-		obj_journal.x = obj_Room.x + 3120;
-		obj_journal.y = 925;
+		//Go Out
+		image_index = 7;
+		obj_journal.x = obj_Room.x + 1505;
+		obj_journal.y = 500;
+	}
+	else if (global.enddaycondition == E_JOURNAL.GONOTES)
+	{
+		//Grab Notes
+		image_index = 5;
+		obj_journal.x = obj_Room.x + 2300;
+		obj_journal.y = 595;
+	}
+	else if (global.enddaycondition == E_JOURNAL.GOWORK)
+	{
+		//Do Assignment
+		image_index = 3;
+		obj_journal.x = obj_Room.x + 2250;
+		obj_journal.y = 645;
 	}
 	else
 	{

@@ -1,3 +1,4 @@
+//YES THE VARIABLES ARE REVERSED SHUT UP//
 
 //Resets Room on new day
 if (!global.b_dayactive)
@@ -51,9 +52,17 @@ if (global.b_dayactive && i_resetroom != 2)
 }
 
 
+if (global.enddaycondition == E_JOURNAL.GODOOR && global.i_chats_to_read == global.i_chats_read)
+{
+	if (image_index != i_closeblinds)
+	{
+		image_speed = 1; //Cycle forward to close\
+		i_goalframe = i_closeblinds;
+		image_index = i_openblinds;
+	}
+}
 
-
-if mouse_check_button_pressed(mb_left) 
+if mouse_check_button_pressed(mb_left)
 {
 	//Arguments are (x, y, obj, prec, notme)
     if (collision_point(mouse_x, mouse_y, id, true, false) && b_canclick && !global.b_phoneactive && (global.i_chats_to_read == global.i_chats_read))
@@ -65,14 +74,12 @@ if mouse_check_button_pressed(mb_left)
 				image_speed = 1; //Cycle forward to close\
 				i_goalframe = i_closeblinds;
 				image_index = i_openblinds;
-				show_debug_message("Closing");
 			}
 			else
 			{
 				image_speed = -1; //Cycle back to open
 				i_goalframe = i_openblinds;
 				image_index = i_closeblinds;
-				show_debug_message("Opening");
 			}
 			b_animating = true;
 		}
