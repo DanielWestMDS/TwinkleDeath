@@ -3,7 +3,11 @@
 
 order = 0;
 
-if (global.b_laurie_read)
+if (global.b_burner2_read)
+{
+	image_index = 0;
+}
+else
 {
 	image_index = 1;
 }

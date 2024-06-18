@@ -3,9 +3,13 @@
 
 order = 0;
 
-if (global.b_laurie_read)
+if (global.b_chris_read)
 {
-	image_index = 1;
+	image_index = 3;
+}
+else
+{
+	image_index = 4;
 }
 // Inherit the parent event
 event_inherited();
