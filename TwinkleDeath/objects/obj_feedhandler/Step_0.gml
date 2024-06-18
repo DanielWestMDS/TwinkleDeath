@@ -22,35 +22,35 @@ switch (global.i_gameday)
 	break;
 	
 	case(3):
-		maxfeedlength = 3;
+		maxfeedlength = 8;
 	break;
 	
 	case(4):
-		maxfeedlength = 3;
+		maxfeedlength = 11;
 	break;
 	
 	case(5):
-		maxfeedlength = 3;
+		maxfeedlength = 13;
 	break;
 	
 	case(6):
-		maxfeedlength = 3;
+		maxfeedlength = 16;
 	break;
 	
 	case(7):
-		maxfeedlength = 3;
+		maxfeedlength = 18;
 	break;
 	
 	case(8):
-		maxfeedlength = 3;
+		maxfeedlength = 21;
 	break;
 	
 	case(9):
-		maxfeedlength = 3;
+		maxfeedlength = 23;
 	break;
 	
 	case(10):
-		maxfeedlength = 6;
+		maxfeedlength = 23;
 	break;
 }
 
