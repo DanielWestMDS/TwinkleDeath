@@ -4,7 +4,7 @@
 function update_days(_gameday, _worldday)
 {
 //Updates days based on inputs.
-gameday = _gameday + 10;
+gameday = _gameday + 1;
 global.i_gameday = gameday;
 worldday = 1;
 switch (gameday)
@@ -212,8 +212,9 @@ function move_with_cam(_Object, _min, _max)
 	if (obj_Room.x > _min && obj_Room.x < _max) 
 	{
 		_Object.x += move;
-		obj_Quagsire.x += move;
+		//obj_Quagsire.x += move;
 		obj_Blinds.x += move;
+		obj_Door.x += move;
 		obj_journal.x += move;
 	}
 	//fix bounding issues
@@ -222,15 +223,15 @@ function move_with_cam(_Object, _min, _max)
 	if (boundlow < 0)
 	{
 		_Object.x += boundlow - 0.1;
-		obj_Quagsire.x += boundlow - 0.1;
 		obj_Blinds.x += boundlow - 0.1;
+		obj_Door.x += boundlow - 0.1;
 		obj_journal.x += boundlow - 0.1;
 	}
 	if (boundhigh < 0)
 	{
 		_Object.x -= boundhigh - 0.1;
-		obj_Quagsire.x -= boundhigh - 0.1;
 		obj_Blinds.x -= boundhigh - 0.1;
+		obj_Door.x -= boundhigh - 0.1;
 		obj_journal.x -= boundhigh - 0.1;
 	}
 
@@ -242,12 +243,26 @@ function setjournal(_transparency)
 	obj_journal.image_alpha = _transparency;
 	
 	//Set Position based on day
-	if (global.i_gameday == 1)
+	if (global.enddaycondition == E_JOURNAL.GODOOR)
 	{
-		//BedLamp
-		image_index = 1;
-		obj_journal.x = obj_Room.x + 3120;
-		obj_journal.y = 925;
+		//Go Out
+		image_index = 7;
+		obj_journal.x = obj_Room.x + 1505;
+		obj_journal.y = 500;
+	}
+	else if (global.enddaycondition == E_JOURNAL.GONOTES)
+	{
+		//Grab Notes
+		image_index = 5;
+		obj_journal.x = obj_Room.x + 2300;
+		obj_journal.y = 595;
+	}
+	else if (global.enddaycondition == E_JOURNAL.GOWORK)
+	{
+		//Do Assignment
+		image_index = 3;
+		obj_journal.x = obj_Room.x + 2250;
+		obj_journal.y = 645;
 	}
 	else
 	{

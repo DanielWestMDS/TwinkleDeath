@@ -64,7 +64,7 @@ if (global.b_dayactive && i_resetroom != 2)
 if mouse_check_button_pressed(mb_left) 
 {
 	//Arguments are (x, y, obj, prec, notme)
-    if (collision_point(mouse_x, mouse_y, id, true, false) && b_canclick && !global.b_phoneactive)
+    if (collision_point(mouse_x, mouse_y, id, true, false) && b_canclick && !global.b_phoneactive && (global.i_chats_to_read != global.i_chats_read))
 	{
 		if (!b_animating)
 		{

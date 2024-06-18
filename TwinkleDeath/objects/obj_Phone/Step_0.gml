@@ -19,8 +19,8 @@ if (!global.b_phoneactive)
 }
 else
 {
-	x = 960;
-	y = 0;
+	x = 1350;
+	y = 870;
 }
 
 // set chats for days

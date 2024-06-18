@@ -35,11 +35,41 @@ if (global.i_chats_read == global.i_chats_to_read)
 	{ 
 		if collision_point(mouse_x, mouse_y, id, true, false) 
 		{ 
-			image_index = 2;
+			if (global.enddaycondition == E_JOURNAL.GODOOR)
+			{
+				image_index = 8;
+			}
+			else if (global.enddaycondition == E_JOURNAL.GONOTES)
+			{
+				image_index = 6;
+			}
+			else if (global.enddaycondition == E_JOURNAL.GOWORK)
+			{
+				image_index = 4;
+			}
+			else
+			{
+				image_index = 2;
+			}
 		}
 		else
 		{
-			image_index = 1;
+			if (global.enddaycondition == E_JOURNAL.GODOOR)
+			{
+				image_index = 7;
+			}
+			else if (global.enddaycondition == E_JOURNAL.GONOTES)
+			{
+				image_index = 5;
+			}
+			else if (global.enddaycondition == E_JOURNAL.GOWORK)
+			{
+				image_index = 3;
+			}
+			else
+			{
+				image_index = 1;
+			}
 		}
 	}
 }
