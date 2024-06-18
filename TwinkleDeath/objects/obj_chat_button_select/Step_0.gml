@@ -14,7 +14,7 @@ if mouse_check_button_pressed(mb_left)
 		// set message tab selected
 			global.tab_open = 1;
 		// create each chat button
-			switch (global.i_gameday)
+			switch (global.i_worldday)
 			{
 			case (1):
 				if (global.b_group_paused)

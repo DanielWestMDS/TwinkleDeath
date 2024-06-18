@@ -9,16 +9,15 @@ if (global.b_dayactive && b_resetroom)
 	b_resetroom = false;
 }
 
-
-if (global.i_gameday != 60)
+if (global.i_gamescene != 18)
 {
 	if (!global.b_dayactive && fadecooldowncurrent == fadecooldownmax)
 	{
 		fadecooldowncurrent = 40;
-		update_days(global.i_gameday, global.i_worldday);
-		show_debug_message(string(global.i_gameday) + " scene, " + string(global.i_worldday) + " day");
+		update_days(global.i_gamescene, global.i_worldday);
+		show_debug_message(string(global.i_gamescene) + " scene, " + string(global.i_worldday) + " day");
 		//New Day Setup
-		if ((global.i_gameday == 1) ||(global.i_gameday == 21))
+		if ((global.i_gamescene == 1))
 		{
 			//Phone up on day 1 to begin with
 			global.b_phoneactive = true;

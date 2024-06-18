@@ -10,57 +10,63 @@ else
 	depth = 0;
 }
 
-
-
-// do something if mouse clicks
-if mouse_check_button_pressed(mb_left) 
+if (global.i_gamescene == 17)
 {
-	//Arguments are (x, y, obj, prec, notme)
-    if collision_point(mouse_x, mouse_y, id, true, false) 
-	{ 
-		// do not do anything while selecting dialogue
-		if (!global.b_selecting_message)
-		{
-			if (!global.b_phoneactive)
-			{
-				global.b_phoneactive = true;
-
-			}
-			else
-			{
-				// move everything related to the phone 
-				global.b_phoneactive = false;
-				global.tab_open = 1;
-			}
-		}
-    }
-}
-
-if position_meeting(mouse_x, mouse_y, id) 
-{ 
-	 if collision_point(mouse_x, mouse_y, id, true, false) 
-	{ 
-	if (!global.b_selecting_message)
-		{
-			if (global.b_phoneactive)
-			{
-				image_index = 3;
-			}
-			else
-			{
-				image_index = 1;
-			}
-		}
-	}
+	global.b_phoneactive = false;
+	y = 10000;
 }
 else
 {
-	if (global.b_phoneactive)
+	// do something if mouse clicks
+	if mouse_check_button_pressed(mb_left) 
 	{
-		image_index = 2;
+		//Arguments are (x, y, obj, prec, notme)
+	    if collision_point(mouse_x, mouse_y, id, true, false) 
+		{ 
+			// do not do anything while selecting dialogue
+			if (!global.b_selecting_message)
+			{
+				if (!global.b_phoneactive)
+				{
+					global.b_phoneactive = true;
+
+				}
+				else
+				{
+					// move everything related to the phone 
+					global.b_phoneactive = false;
+					global.tab_open = 1;
+				}
+			}
+	    }
+	}
+
+	if position_meeting(mouse_x, mouse_y, id) 
+	{ 
+		 if collision_point(mouse_x, mouse_y, id, true, false) 
+		{ 
+		if (!global.b_selecting_message)
+			{
+				if (global.b_phoneactive)
+				{
+					image_index = 3;
+				}
+				else
+				{
+					image_index = 1;
+				}
+			}
+		}
 	}
 	else
 	{
-		image_index = 0;
+		if (global.b_phoneactive)
+		{
+			image_index = 2;
+		}
+		else
+		{
+			image_index = 0;
+		}
 	}
 }

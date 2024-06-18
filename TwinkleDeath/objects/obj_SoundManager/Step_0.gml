@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 f_stress += process_stress(f_stress, b_decay);
-if (f_stress < 0)
+if (f_stress < 0 || global.i_gamescene == 17)
 {
 	f_stress = 0;
 }
@@ -72,7 +72,7 @@ if (i_timetillbeat >= (140 - i_pulse))
 	audio_play_sound_on(global.heartbeat_emitter, snd_heartbeat, false,0);
 	i_timetillbeat = 0;
 }
-show_debug_message(string(i_pulse));
+//show_debug_message(string(i_pulse));
 
 if (i_pulse > 90)
 {
@@ -94,11 +94,11 @@ else
 if (global.b_phoneactive)
 {
 	set_stress_rate(E_STRESS_LEVEL.SLIGHT_STRESS);
-	if(global.i_gameday > 5)
+	if(global.i_worldday > 5)
 	{
 		set_stress_rate(E_STRESS_LEVEL.MEDIUM_STRESS);
 	}
-	if(global.i_gameday > 8)
+	if(global.i_worldday > 8)
 	{
 		set_stress_rate(E_STRESS_LEVEL.HIGH_STRESS);
 	}
@@ -106,7 +106,7 @@ if (global.b_phoneactive)
 else
 {
 	set_stress_rate(E_STRESS_LEVEL.LOW_STRESS);
-	if(global.i_gameday > 5)
+	if(global.i_worldday > 5)
 	{
 		set_stress_rate(E_STRESS_LEVEL.SLIGHT_STRESS);
 	}

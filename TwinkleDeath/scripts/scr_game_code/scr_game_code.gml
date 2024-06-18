@@ -3,50 +3,72 @@
 
 function update_days(_gameday, _worldday)
 {
-//Updates days based on inputs.
-gameday = _gameday + 3;
-global.i_gameday = gameday;
-worldday = 1;
-switch (gameday)
+	if (_gameday == 17)
 {
-case 0:
-worldday = 1;
-break;
-case 1:
-worldday = 2;
-break;
-case 2:
-worldday = 2;
-break;
-case 3:
-worldday = 3;
-break;
-case 4:
-worldday = 6;
-break;
-case 5:
-worldday = 8;
-break;
-case 6:
-worldday = 11;
-break;
-case 7:
-worldday = 14;
-break;
-case 8:
-worldday = 18;
-break;
-case 9:
-worldday = 19;
-break;
-case 10:
-worldday = 20;
-break;
-default:
-worldday = _worldday +1;
-break;
+	room_goto_next();
 }
-global.i_worldday = worldday;
+//Updates days based on inputs.
+gameday = _gameday + 17;
+global.i_gamescene = gameday;
+//We dont use this anymore. Ignore it
+switch (global.i_gamescene)
+{
+	case 1:
+	global.i_worldday = 1;
+	break;
+	case 2:
+	global.i_worldday = 2;
+	break;
+	case 3:
+	global.i_worldday = 2;
+	break;
+	case 4:
+	global.i_worldday = 3;
+	break;
+	case 5:
+	global.i_worldday = 3;
+	break;
+	case 6:
+	global.i_worldday = 4;
+	break;
+	case 7:
+	global.i_worldday = 5;
+	break;
+	case 8:
+	global.i_worldday = 6;
+	break;
+	case 9:
+	global.i_worldday = 6;
+	break;
+	case 10:
+	global.i_worldday = 7;
+	break;
+	case 11:
+	global.i_worldday = 7;
+	break;
+	case 12:
+	global.i_worldday = 8;
+	break;
+	case 13:
+	global.i_worldday = 8;
+	break;
+	case 14:
+	global.i_worldday = 9;
+	break;
+	case 15:
+	global.i_worldday = 10;
+	break;
+	case 16:
+	global.i_worldday = 10;
+	break;
+	case 17: //LAST DAY, SCOTT LEAVES, NO INFO ON PHONE. CAM HAS SET 
+	global.i_worldday = 11;
+	break;
+	case 18: //GAME AUTO MOVES TO END SCREEN
+	global.i_worldday = 11;
+	break;
+}
+
 }
 
 
@@ -264,11 +286,54 @@ function setjournal(_transparency)
 		obj_journal.x = obj_Room.x + 2250;
 		obj_journal.y = 645;
 	}
+	else if (global.enddaycondition == E_JOURNAL.GOSLACK)
+	{
+		//Do Assignment
+		image_index = 3;
+		obj_journal.x = obj_Room.x + 1505;
+		obj_journal.y = 500;
+	}
 	else
 	{
 		//Assuming Night as Default
 		image_index = 1;
 		obj_journal.x = obj_Room.x + 3120;
 		obj_journal.y = 925;
+	}
+}
+
+function updatephonetop(_chattype)
+{
+	if (_chattype == CURRENT_CHAT.BURNER1)
+	{
+		obj_phone_top.image_index  = 4;	
+	}
+	if (_chattype == CURRENT_CHAT.BURNER2)
+	{
+		obj_phone_top.image_index  = 5;	
+	}
+	if (_chattype == CURRENT_CHAT.LAURIE)
+	{
+		obj_phone_top.image_index = 11;	
+	}
+	if (_chattype == CURRENT_CHAT.CHRIS)
+	{
+		obj_phone_top.image_index  = 7;
+	}
+	if (_chattype == CURRENT_CHAT.GROUP)
+	{
+		obj_phone_top.image_index = 12;
+	}
+	if (_chattype == CURRENT_CHAT.GROUPTRIP)
+	{
+		obj_phone_top.image_index = 13;
+	}
+	if (_chattype == CURRENT_CHAT.JUSTIN)
+	{
+		obj_phone_top.image_index  = 9;
+	}
+	if (_chattype == CURRENT_CHAT.NONE)
+	{
+		obj_phone_top.image_index = 1;
 	}
 }

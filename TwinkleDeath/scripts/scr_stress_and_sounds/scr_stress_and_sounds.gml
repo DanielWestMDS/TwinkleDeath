@@ -110,14 +110,12 @@ function stop_sounds()
 
 function choose_backtrack()
 {
-	if (global.i_gameday <= 5)
+	if (global.i_worldday <= 5 || global.i_gamescene == 17)
 		{
-			show_debug_message("sound");
 			audio_play_sound_on(global.music_emitter, snd_room_tone, true, 0);
 		}
 		else
 		{
-			show_debug_message("sound");
 			audio_play_sound_on(global.music_emitter, snd_dark_ambient, true, 0);
 		}
 	if (global.e_time_of_day == E_TIMEOFDAY.MORNING || global.e_time_of_day == E_TIMEOFDAY.AFTERNOON)
