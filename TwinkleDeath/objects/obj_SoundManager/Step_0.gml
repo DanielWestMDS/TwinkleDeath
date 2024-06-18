@@ -74,6 +74,21 @@ if (i_timetillbeat >= (140 - i_pulse))
 }
 show_debug_message(string(i_pulse));
 
+if (i_pulse > 90)
+{
+	i_panicgain = 1;
+	audio_emitter_gain(global.panic_emitter, i_panicgain);
+	if (audio_is_playing(snd_panic_attack) = false)
+    {
+		audio_play_sound_on(global.panic_emitter, snd_panic_attack, false,0);
+	}
+}
+else
+{
+	i_panicgain -= 0.01;
+	audio_emitter_gain(global.panic_emitter, i_panicgain);
+}
+
 
 if (keyboard_check_pressed(ord("W")))
 {

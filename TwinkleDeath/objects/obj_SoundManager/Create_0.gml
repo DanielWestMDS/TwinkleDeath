@@ -13,8 +13,9 @@ i_fade = 1;
 global.music_emitter = audio_emitter_create();
 global.background_emitter = audio_emitter_create();
 global.heartbeat_emitter = audio_emitter_create();
-
+global.panic_emitter = audio_emitter_create();
 
 i_pulse = 40; //smaller is longer heartbeat
 i_timetillbeat = 0;
 i_gain = 0;
+i_panicgain = 0;

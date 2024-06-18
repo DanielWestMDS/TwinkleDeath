@@ -102,6 +102,10 @@ function stop_sounds()
     {
         audio_stop_sound(snd_crickets);
     }
+	if (audio_is_playing(snd_panic_attack))
+    {
+        audio_stop_sound(snd_panic_attack);
+    }
 }
 
 function choose_backtrack()
