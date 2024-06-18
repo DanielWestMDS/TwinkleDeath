@@ -7,25 +7,28 @@ if mouse_check_button_pressed(mb_left)
 	//Arguments are (x, y, obj, prec, notme)
     if collision_point(mouse_x, mouse_y, id, true, false) 
 	{ 
-		// chat opened
-		global.b_chat_opened = true;
-		// change to chat object
-		switch(global.i_gameday)
+		if (!global.b_trip_read)
 		{
-			case(8):
-				instance_create_layer(1025, 1160, "Chat", obj_chat_trip);
-			break;
-			
-			case(9):
-				instance_create_layer(1025, 1160, "Chat", obj_chat_trip_8);
-			break;
-			
-			case(10):
-				instance_create_layer(1025, 1160, "Chat", obj_chat_trip_9);
-			break;
-			
+			// chat opened
+			global.b_chat_opened = true;
+			// change to chat object
+			switch(global.i_gameday)
+			{
+				case(8):
+					instance_create_layer(1025, 1160, "Chat", obj_chat_trip);
+				break;
+				
+				case(9):
+					instance_create_layer(1025, 1160, "Chat", obj_chat_trip_8);
+				break;
+				
+				case(10):
+					instance_create_layer(1025, 1160, "Chat", obj_chat_trip_9);
+				break;
+				
+			}
+			instance_destroy(self);
 		}
-		instance_destroy(self);
     }
 }
 
