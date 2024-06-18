@@ -90,15 +90,24 @@ else
 }
 
 
-if (keyboard_check_pressed(ord("W")))
+//Set passive stress levels
+if (global.b_phoneactive)
 {
-	add_stressful_event(10);
+	set_stress_rate(E_STRESS_LEVEL.SLIGHT_STRESS);
+	if(global.i_gameday > 5)
+	{
+		set_stress_rate(E_STRESS_LEVEL.MEDIUM_STRESS);
+	}
+	if(global.i_gameday > 8)
+	{
+		set_stress_rate(E_STRESS_LEVEL.HIGH_STRESS);
+	}
 }
-if (keyboard_check_pressed(ord("E")))
+else
 {
 	set_stress_rate(E_STRESS_LEVEL.LOW_STRESS);
-}
-if (keyboard_check_pressed(ord("R")))
-{
-	set_stress_rate(E_STRESS_LEVEL.MILD_PANIC);
+	if(global.i_gameday > 5)
+	{
+		set_stress_rate(E_STRESS_LEVEL.SLIGHT_STRESS);
+	}
 }

@@ -33,15 +33,15 @@ function set_stress_rate(_stress_enum)
 {
 	if (_stress_enum = E_STRESS_LEVEL.LOW_STRESS)
 	{
-		global.f_stressrate = -2;
+		global.f_stressrate = -4;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.SLIGHT_STRESS)
 	{
-		global.f_stressrate = 0.8;
+		global.f_stressrate = -2;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.MEDIUM_STRESS)
 	{
-		global.f_stressrate = 1.5;
+		global.f_stressrate = 0.5;
 	}
 	if (_stress_enum = E_STRESS_LEVEL.HIGH_STRESS)
 	{
