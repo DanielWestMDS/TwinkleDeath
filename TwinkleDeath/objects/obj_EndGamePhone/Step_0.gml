@@ -11,9 +11,9 @@ if (mouse_check_button_pressed(mb_left)) {
 
 if (mouse_x >= 1200 && mouse_x <= 1528)
 {
-	if (mouse_y >= 1115 && mouse_y <= 1242)
+	if (mouse_y >= 1261 && mouse_y <= 1383)
 	{
-		image_index = 5;
+		image_index = 3;
 		if (mouse_check_button_pressed(mb_left))
 		{
 			room_goto_next();
@@ -22,5 +22,5 @@ if (mouse_x >= 1200 && mouse_x <= 1528)
 }
 else
 {
-	image_index = 4;
+	image_index = 2;
 }
