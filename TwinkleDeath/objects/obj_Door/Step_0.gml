@@ -21,15 +21,7 @@ if (global.b_dayactive && i_resetroom != 2)
 		b_day = false;
 	}
 	//Set if the blinds start open or closed in the day
-	if (global.i_gameday == 1)
-	{
-		b_startopen = true;
-	}
-	else
-	{
-		b_startopen = false;
-	}
-	
+	b_startopen = true;
 	//Set Which Blinds we are using
 	if (b_day == true)
 	{
@@ -64,7 +56,7 @@ if (global.b_dayactive && i_resetroom != 2)
 if mouse_check_button_pressed(mb_left) 
 {
 	//Arguments are (x, y, obj, prec, notme)
-    if (collision_point(mouse_x, mouse_y, id, true, false) && b_canclick && !global.b_phoneactive && (global.i_chats_to_read != global.i_chats_read))
+    if (collision_point(mouse_x, mouse_y, id, true, false) && b_canclick && !global.b_phoneactive && (global.i_chats_to_read == global.i_chats_read))
 	{
 		if (!b_animating)
 		{

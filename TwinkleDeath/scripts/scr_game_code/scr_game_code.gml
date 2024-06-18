@@ -214,6 +214,7 @@ function move_with_cam(_Object, _min, _max)
 		_Object.x += move;
 		//obj_Quagsire.x += move;
 		obj_Blinds.x += move;
+		obj_Door.x += move;
 		obj_journal.x += move;
 	}
 	//fix bounding issues
@@ -223,12 +224,14 @@ function move_with_cam(_Object, _min, _max)
 	{
 		_Object.x += boundlow - 0.1;
 		obj_Blinds.x += boundlow - 0.1;
+		obj_Door.x += boundlow - 0.1;
 		obj_journal.x += boundlow - 0.1;
 	}
 	if (boundhigh < 0)
 	{
 		_Object.x -= boundhigh - 0.1;
 		obj_Blinds.x -= boundhigh - 0.1;
+		obj_Door.x -= boundhigh - 0.1;
 		obj_journal.x -= boundhigh - 0.1;
 	}
 
