@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 f_stress += process_stress(f_stress, b_decay);
-if (f_stress < 0 || global.i_gamescene == 17)
+if (f_stress < 0 || global.i_gamescene == 16)
 {
 	f_stress = 0;
 }
@@ -28,6 +28,8 @@ if (!global.b_dayactive)
 	i_fade-= 0.01;
 	audio_emitter_gain(global.music_emitter, i_fade);
 	audio_emitter_gain(global.background_emitter, i_fade);
+	audio_emitter_gain(global.heartbeat_emitter, i_fade);
+	audio_emitter_gain(global.panic_emitter, i_fade);
 	
 }
 if (global.b_dayactive && b_changeday)
@@ -106,8 +108,4 @@ if (global.b_phoneactive)
 else
 {
 	set_stress_rate(E_STRESS_LEVEL.LOW_STRESS);
-	if(global.i_worldday > 5)
-	{
-		set_stress_rate(E_STRESS_LEVEL.SLIGHT_STRESS);
-	}
 }
