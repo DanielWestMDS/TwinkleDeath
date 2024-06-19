@@ -20,7 +20,7 @@ if (mouse_check_button_pressed(mb_left) && !global.b_group_read)
 			case(2):
 			// day 1 group chat
 			// change this to if afternoon
-			if (!global.b_group_paused)
+			if (global.e_time_of_day == 0)
 			{
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_1);
 			}
@@ -31,8 +31,8 @@ if (mouse_check_button_pressed(mb_left) && !global.b_group_read)
 			break;
 			
 			case(3):
-			// day 2 group chat
-			if (!global.b_group_paused)
+			// day 3 group chat
+			if (global.e_time_of_day == 0)
 			{
 				instance_create_layer(1025, 1260, "Chat", obj_chat_group_2);
 			}

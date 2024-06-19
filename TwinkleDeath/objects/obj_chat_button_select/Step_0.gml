@@ -16,7 +16,6 @@ if mouse_check_button_pressed(mb_left)
 		// create each chat button
 			switch (global.i_worldday)
 			{
-				// day 1
 			case (1):
 				if (global.b_group_paused)
 				{
@@ -25,33 +24,38 @@ if mouse_check_button_pressed(mb_left)
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 			break;
 			
-			// day 2
 			case (2):
 				// need code for checking game time
-				
-				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
-				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+				if (global.e_time_of_day == 0)
+				{
+					instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
+					instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_chris);
+					instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+				}
+				else
+				{
+					instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+				}
 			break;
 			
 			case (3):
-		
-				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_chris);
-				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+				if (global.e_time_of_day == 0)
+				{
+					instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+					instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
+				}
+				else
+				{
+					instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+				}
 			break;
 			
-			// day 3
 			case (4):
-				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
-			break;
-			
-			// night
-			case (5):
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
 			break;
 			
-			// day 4
-			case (6):
+			case (5):
 			if (global.b_justin_paused)
 			{
 				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_laurie);
@@ -60,8 +64,7 @@ if mouse_check_button_pressed(mb_left)
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 			break;
 			
-			// day 5
-			case (7):
+			case (6):
 				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_burner);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 			break;

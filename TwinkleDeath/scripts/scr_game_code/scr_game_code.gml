@@ -8,7 +8,7 @@ function update_days(_gameday, _worldday)
 	room_goto_next();
 }
 //Updates days based on inputs.
-gameday = _gameday + 17;
+gameday = _gameday + 1;
 global.i_gamescene = gameday;
 //We dont use this anymore. Ignore it
 switch (global.i_gamescene)
@@ -265,6 +265,7 @@ function setjournal(_transparency)
 	obj_journal.image_alpha = _transparency;
 	
 	//Set Position based on day
+	// head to school
 	if (global.enddaycondition == E_JOURNAL.GODOOR)
 	{
 		//Go Out

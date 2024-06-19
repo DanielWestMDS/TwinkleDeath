@@ -24,7 +24,7 @@ else
 }
 
 // set chats for days
-switch(global.i_worldday)
+switch(global.i_gamescene)
 {
 	case(1):
 		global.i_chats_to_read = 2;
@@ -35,24 +35,43 @@ switch(global.i_worldday)
 	break;
 	
 	case(3):
-		global.i_chats_to_read = 2;
+		global.i_chats_to_read = 1;
 	break;
 	
+	// day 3
 	case(4):
 		global.i_chats_to_read = 2;
 	break;
 	
+	// gc b
 	case(5):
-		global.i_chats_to_read = 3;
+		global.i_chats_to_read = 1;
 	break;
 	
+	// day 4
 	case(6):
 		global.i_chats_to_read = 2;
 	break;
 	
+	// day 5
 	case(7):
+		global.i_chats_to_read = 3;
+	break;
+	
+	// day 6
+	case(8):
+		global.i_chats_to_read = 1;
+	break;
+	
+	// group b burner b
+	case(9):
 		global.i_chats_to_read = 2;
 	break;
+	
+	case(10):
+		global.i_chats_to_read = 4;
+	break;
+	
 	default:
 		global.i_chats_to_read = 0;
 }

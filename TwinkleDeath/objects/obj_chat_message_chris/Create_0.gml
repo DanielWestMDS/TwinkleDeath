@@ -5,11 +5,11 @@ order = 0;
 
 if (global.b_chris_read)
 {
-	image_index = 3;
+	image_index = 5;
 }
 else
 {
-	image_index = 4;
+	image_index = 6;
 }
 // Inherit the parent event
 event_inherited();
