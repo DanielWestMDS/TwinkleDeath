@@ -29,22 +29,22 @@ if (global.b_group_read == false)
 		switch (current_messages_sent)
 		{
 			case (2):
-				selectbutton(0, true);
+				selectbutton(0, false);
 			break;
 			
-			case (5):
-				selectbutton(1, false);
+			case (4):
+				selectbutton(1, true);
 			break;
 			
-			case (7):
+			case (8):
 				selectbutton(2, false);
 			break;
 			
-			case (12):
+			case (10):
 				selectbutton(3, true);
 			break;
 			
-			case (13):
+			case (21):
 			if (!b_chat_finished)
 			{
 				global.b_group_read = true;

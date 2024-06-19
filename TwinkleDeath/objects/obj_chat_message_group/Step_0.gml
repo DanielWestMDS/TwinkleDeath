@@ -74,9 +74,10 @@ if (mouse_check_button_pressed(mb_left) && !global.b_group_read)
 			{
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_7a);
 			}
+			break;
 			
 			case(10):
-			if (global.b_group_paused && global.i_chats_read >= 3)
+			if (global.e_time_of_day != 0)
 			{
 				instance_create_layer(1025, 1160, "Chat", obj_chat_group_9b);
 			}

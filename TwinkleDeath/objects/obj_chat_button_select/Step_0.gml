@@ -70,15 +70,30 @@ if mouse_check_button_pressed(mb_left)
 			break;
 			
 			case (7):
+			if (global.e_time_of_day == 0)
+			{
 				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_burner);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
+			}
+			else
+			{
+				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_burner);
+			}
 			break;
 			
 			case (8):
+			if (global.e_time_of_day == 0)
+			{
 				instance_create_layer(room_width / 2, (room_height / 2) + 800, "Chat", obj_chat_message_burner);
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 				instance_create_layer(room_width / 2, (room_height / 2) + 1600, "Chat", obj_chat_message_trip);
+			}
+			else
+			{
+				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 				instance_create_layer(room_width / 2, (room_height / 2) + 2000, "Chat", obj_chat_message_chris);
+			}
+
 			break;
 			
 			case(9):
@@ -87,7 +102,7 @@ if mouse_check_button_pressed(mb_left)
 			break;
 			
 			case(10):
-			if (global.b_group_paused && global.i_chats_read > 2)
+			if (global.e_time_of_day != 0)
 			{
 				instance_create_layer(room_width / 2, room_height / 2, "Chat", obj_chat_message_group);
 			}

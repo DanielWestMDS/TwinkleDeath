@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chris_response_7",
-    "path":"sprites/spr_chris_response_7/spr_chris_response_7.yy",
+    "name":"spr_group_response_7b",
+    "path":"sprites/spr_group_response_7b/spr_group_response_7b.yy",
   },
   "spriteMaskId":null,
   "visible":true,

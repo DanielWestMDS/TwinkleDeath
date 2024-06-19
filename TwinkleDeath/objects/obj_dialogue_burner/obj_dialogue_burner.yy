@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_laurie_response_4",
-    "path":"sprites/spr_laurie_response_4/spr_laurie_response_4.yy",
+    "name":"spr_burner_response_5",
+    "path":"sprites/spr_burner_response_5/spr_burner_response_5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

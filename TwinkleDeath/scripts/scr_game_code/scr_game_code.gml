@@ -8,7 +8,7 @@ function update_days(_gameday, _worldday)
 	room_goto_next();
 }
 //Updates days based on inputs.
-gameday = _gameday + 7;
+gameday = _gameday + 1;
 global.i_gamescene = gameday;
 //We dont use this anymore. Ignore it
 switch (global.i_gamescene)
@@ -290,7 +290,7 @@ function setjournal(_transparency)
 	else if (global.enddaycondition == E_JOURNAL.GOSLACK)
 	{
 		//Do Assignment
-		image_index = 3;
+		image_index = 9;
 		obj_journal.x = obj_Room.x + 1505;
 		obj_journal.y = 500;
 	}

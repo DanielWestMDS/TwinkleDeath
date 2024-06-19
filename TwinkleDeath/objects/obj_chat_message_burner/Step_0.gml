@@ -26,7 +26,7 @@ if (mouse_check_button_pressed(mb_left) && !global.b_burner_read)
 			case(7):
 			if (global.e_time_of_day == 0)
 			{
-				instance_create_layer(room_width / 2, 500, "Chat", obj_chat_burner_1);
+				instance_create_layer(room_width / 2, 1250, "Chat", obj_chat_burner_1);
 			}
 			else
 			{

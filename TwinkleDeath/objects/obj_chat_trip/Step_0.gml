@@ -35,7 +35,7 @@ if (global.b_trip_read == false)
 			case (4):
 			if (!b_chat_finished)
 			{
-				global.b_group_read = true;
+				global.b_trip_read = true;
 				global.i_chats_read++;
 				b_chat_finished = true;
 			}
