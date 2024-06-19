@@ -36,15 +36,7 @@ if (global.i_gamescene != 18)
 		
 	}
 	
-	//Day Code
-	if (global.b_dayactive)
-	{
-		//Check end day Prompt
-		if (global.b_endday == true)
-		{
-			global.b_dayactive = false;
-		}
-	}
+
 	
 	if (!global.b_phoneactive)
 	{

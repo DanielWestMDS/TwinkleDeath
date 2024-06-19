@@ -21,7 +21,7 @@ if mouse_check_button_pressed(mb_left)
     }
 }
 
-if (global.b_trip_read == false)
+if (global.b_group_read == false)
 {
 	//if (global.i_selected_message == 0 && !global.b_selecting_message)
 	//{
@@ -41,7 +41,9 @@ if (global.b_trip_read == false)
 			break;
 			
 			case (20):
-				global.b_group_paused = true;
+				global.b_group_read = true;
+				global.i_chats_read++;
+				b_chat_finished = true;
 			break;
 		}
 	//}

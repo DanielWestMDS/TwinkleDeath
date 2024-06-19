@@ -9,5 +9,5 @@ event_inherited();
 
 if (sprite_index == spr_post0)
 {
-	y += 450;
+
 }

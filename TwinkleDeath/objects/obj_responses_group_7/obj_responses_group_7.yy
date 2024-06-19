@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_group_response_7b",
-    "path":"sprites/spr_group_response_7b/spr_group_response_7b.yy",
+    "name":"spr_group_response_7",
+    "path":"sprites/spr_group_response_7/spr_group_response_7.yy",
   },
   "spriteMaskId":null,
   "visible":true,

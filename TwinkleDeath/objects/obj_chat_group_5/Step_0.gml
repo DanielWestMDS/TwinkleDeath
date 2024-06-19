@@ -51,7 +51,9 @@ if (global.b_group_read == false)
 			case (25):
 			if (!b_chat_finished)
 			{
-				global.b_group_paused = true;
+				global.b_group_read = true;
+				global.i_chats_read++;
+				b_chat_finished = true;
 			}
 			break;
 		}

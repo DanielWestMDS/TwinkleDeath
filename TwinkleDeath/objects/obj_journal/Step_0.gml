@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.i_chats_read == global.i_chats_to_read)
+if (global.i_chats_read == global.i_chats_to_read && !global.b_phoneactive)
 {
 	setjournal(0.8);
 	
@@ -21,12 +21,21 @@ if (global.i_chats_read == global.i_chats_to_read)
 				// global bools for each chat
 				global.b_group_read = false;
 				global.b_laurie_read = false;
-				global.b_crispin_read = false;
+				global.b_chris_read = false;
 				global.b_burner_read = false;
 				global.b_leo_read = false;
 				global.b_justin_read = false;
 				global.b_burner2_read = false;
 				global.b_adam_read = false;
+				global.b_trip_read = false;
+				
+				global.b_group_paused = false;
+				global.b_justin_paused = false;
+				
+				// for moving scott messages
+				global.i_response_distance = 0;
+				global.i_current_responses = 0;
+				global.i_responses_moved = 0;
 			}
 	    }
 	}

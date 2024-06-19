@@ -16,6 +16,8 @@ current_messages_sent = 0;
 
 posts_sent = 0;
 
+global.i_current_responses = 0;
+
 // dialogue bugging out
 b_dialogue_generated = false;
 

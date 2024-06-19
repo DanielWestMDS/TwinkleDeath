@@ -30,7 +30,7 @@ if mouse_check_button_pressed(mb_left)
     }
 }
 
-if (global.b_laurie_read == true)
+if (global.b_justin_read == false)
 {
 	//if (global.i_selected_message == 0 && !global.b_selecting_message)
 	//{

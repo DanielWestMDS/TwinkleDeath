@@ -24,13 +24,15 @@ if mouse_check_button_pressed(mb_left)
 				if (posts_sent == 0)
 				{
 					posts_sent++;
-					instance_create_layer(1290, 1330, "Chat", obj_post, {sprite_index : spr_post0});
+					instance_create_layer(1290, 1810, "Chat", obj_post, {sprite_index : spr_post0});
+					global.i_current_responses++;
 				}
 				else
 				{
+					posts_sent++;
 					instance_create_layer(1290, 1330, "Chat", obj_post, {sprite_index : spr_post1});
 				}
-				global.i_current_responses++;
+				//global.i_current_responses++;
 			}
 			else
 			{
@@ -61,6 +63,11 @@ if (global.b_group_read == false)
 			break;
 			
 			case (7):
+			if (posts_sent == 2)
+			{
+				global.i_current_responses++;
+				posts_sent++;
+			}
 			if (!global.b_selecting_message)
 			{
 				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 1});
@@ -70,6 +77,8 @@ if (global.b_group_read == false)
 			break;
 			
 			case (20):
+
+			
 			if (!global.b_selecting_message)
 			{
 				instance_create_layer(1650, 1000, "instances", obj_dialogue_groupchat_one, {image_index : 2});
