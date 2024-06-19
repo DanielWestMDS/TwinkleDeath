@@ -5,12 +5,11 @@ order = 0;
 
 if (global.b_burner2_read)
 {
-	image_index = 0;
+	image_index = 2;
 }
 else
 {
-	image_index = 1;
+	image_index = 2;
 }
 // Inherit the parent event
 event_inherited();
-
