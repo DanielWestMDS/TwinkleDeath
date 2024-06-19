@@ -5,11 +5,11 @@ order = 0;
 
 if (global.b_justin_read)
 {
-	image_index = 7;
+	image_index = 5;
 }
 else
 {
-	image_index = 8;
+	image_index = 6;
 }
 // Inherit the parent event
 event_inherited();

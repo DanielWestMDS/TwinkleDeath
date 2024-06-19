@@ -8,7 +8,7 @@ function update_days(_gameday, _worldday)
 	room_goto_next();
 }
 //Updates days based on inputs.
-gameday = _gameday + 1;
+gameday = _gameday + 7;
 global.i_gamescene = gameday;
 //We dont use this anymore. Ignore it
 switch (global.i_gamescene)
